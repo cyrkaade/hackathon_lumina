@@ -15,6 +15,8 @@ COPY . .
 
 RUN mkdir -p uploads data
 
+ENV WHISPER_MODEL_SIZE=tiny
+
 EXPOSE 8000
 
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
