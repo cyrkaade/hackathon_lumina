@@ -20,7 +20,6 @@ class EmotionAnalyzer:
         )
         
     def analyze_emotions(self, text: str) -> Dict:
-        """Analyze emotional state from text"""
         emotions = self.emotion_classifier(text)
 
         inputs = self.sentiment_tokenizer(text, return_tensors="pt", truncation=True, max_length=512)
@@ -37,7 +36,6 @@ class EmotionAnalyzer:
         }
     
     def track_emotion_progression(self, segments: list) -> list:
-        """Track how emotions change throughout the call"""
         emotion_timeline = []
         
         for segment in segments:
