@@ -1,14 +1,25 @@
 
 from transformers import pipeline
 import re
+from typing import Dict
+import torch
 
 class ResolutionDetector:
     def __init__(self):
-        self.qa_pipeline = pipeline(
-            "question-answering",
-            model="DeepPavlov/rubert-base-cased-squad",
-            device=0 if torch.cuda.is_available() else -1
-        )
+        try:
+            self.qa_pipeline = pipeline(
+                "question-answering",
+                model="DeepPavlov/rubert-base-cased-squad",
+                device=0 if torch.cuda.is_available() else -1
+            )
+            print("✅ Loaded Russian QA model successfully")
+        except Exception as e:
+            print(f"⚠️ Russian QA model failed, using English fallback: {e}")
+            self.qa_pipeline = pipeline(
+                "question-answering",
+                model="distilbert-base-cased-distilled-squad",
+                device=0 if torch.cuda.is_available() else -1
+            )
 
         self.resolution_keywords = {
             "resolved": ["решено", "решил", "помог", "исправлено", "готово"],

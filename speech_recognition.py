@@ -4,16 +4,26 @@ import torch
 from typing import Tuple, Dict
 import numpy as np
 from scipy.io import wavfile
+import os
+import subprocess
+import tempfile
 
 class SpeechRecognizer:
-    def __init__(self, model_size="large"):
+    def __init__(self, model_size="base"):
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
-        self.model = whisper.load_model(model_size, device=self.device)
+        try:
+            self.model = whisper.load_model(model_size, device=self.device)
+        except Exception as e:
+            print(f"Failed to load {model_size} model, trying smaller model: {e}")
+            self.model = whisper.load_model("tiny", device=self.device)
         
     def transcribe_audio(self, audio_path: str, language: str = "ru") -> Dict:
-
         try:
-
+            if not os.path.exists(audio_path):
+                raise Exception(f"Audio file not found: {audio_path}")
+            
+            print(f"Transcribing audio file: {audio_path}")
+            
             result = self.model.transcribe(
                 audio_path,
                 language=language,

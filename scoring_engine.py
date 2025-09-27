@@ -59,7 +59,7 @@ class ScoringEngine:
         positive_weight = 0.7
         negative_weight = -0.5
         
-        score = 50  
+        score = 50
         
 
         if progression:
@@ -77,7 +77,7 @@ class ScoringEngine:
     
     def _calculate_communication_score(self, text: str, response_times: List, interruptions: int) -> float:
 
-        score = 80  
+        score = 80
 
         score -= interruptions * 5
 
@@ -94,7 +94,7 @@ class ScoringEngine:
     
     def _calculate_professionalism_score(self, text: str, greeting: bool, closing: bool) -> float:
 
-        score = 60  
+        score = 60
         
         if greeting:
             score += 15

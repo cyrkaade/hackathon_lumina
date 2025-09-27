@@ -1,0 +1,10 @@
+runtime: python39
+service: call-center-api
+
+handlers:
+- url: /.*
+  script: auto
+
+env_variables:
+  PORT: 8080
+

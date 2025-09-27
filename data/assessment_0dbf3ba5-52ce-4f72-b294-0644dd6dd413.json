@@ -1,0 +1,43 @@
+{
+  "call_id": "0dbf3ba5-52ce-4f72-b294-0644dd6dd413",
+  "worker_id": null,
+  "scores": {
+    "total_score": 58.0,
+    "emotion_score": 50,
+    "resolution_score": 50,
+    "communication_score": 80,
+    "professionalism_score": 60,
+    "breakdown": {
+      "strengths": [],
+      "improvements": [
+        "Work on empathy and emotional connection"
+      ]
+    }
+  },
+  "analysis": {
+    "emotions": {
+      "emotions": [
+        {
+          "label": "NEUTRAL",
+          "score": 0.712843656539917
+        }
+      ],
+      "sentiment": "negative",
+      "sentiment_confidence": 0.712843656539917
+    },
+    "emotion_progression": [],
+    "resolution": {
+      "resolved": false,
+      "resolution_score": 50,
+      "status": "unclear",
+      "final_sentiment": "neutral"
+    },
+    "worker_text": "",
+    "customer_text": "",
+    "response_times": [],
+    "interruptions": 0,
+    "greeting": false,
+    "closing": false
+  },
+  "timestamp": "2025-09-27T23:38:05.735086"
+}
