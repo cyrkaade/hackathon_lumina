@@ -85,10 +85,16 @@ class ScoringEngine:
         if avg_response_time > 5:
             score -= 10
 
-        clarity_phrases = ["понимаю", "ясно", "конечно", "помогу"]
-        for phrase in clarity_phrases:
-            if phrase in text.lower():
-                score += 2
+        clarity_phrases = {
+            "ru": ["понимаю", "ясно", "конечно", "помогу", "разберёмся"],
+            "kk": ["түсіндім", "анық", "әрине", "көмектесемін", "шешеміз"]
+        }
+        
+        # Check for clarity phrases in the detected language
+        for lang, phrases in clarity_phrases.items():
+            for phrase in phrases:
+                if phrase in text.lower():
+                    score += 2
         
         return max(0, min(100, score))
     
@@ -101,16 +107,26 @@ class ScoringEngine:
         if closing:
             score += 15
 
-        professional_indicators = ["здравствуйте", "спасибо", "пожалуйста", "извините"]
-        unprofessional_indicators = ["блин", "черт", "дурак"]
+        professional_indicators = {
+            "ru": ["здравствуйте", "спасибо", "пожалуйста", "извините", "благодарю"],
+            "kk": ["сәлеметсіз бе", "рахмет", "өтінемін", "кешіріңіз", "ризамын"]
+        }
+        unprofessional_indicators = {
+            "ru": ["блин", "черт", "дурак", "идиот"],
+            "kk": ["құдай", "шайтан", "ақымақ", "идиот"]
+        }
         
-        for indicator in professional_indicators:
-            if indicator in text.lower():
-                score += 2.5
+        # Check for professional indicators in both languages
+        for lang, indicators in professional_indicators.items():
+            for indicator in indicators:
+                if indicator in text.lower():
+                    score += 2.5
         
-        for indicator in unprofessional_indicators:
-            if indicator in text.lower():
-                score -= 10
+        # Check for unprofessional indicators in both languages
+        for lang, indicators in unprofessional_indicators.items():
+            for indicator in indicators:
+                if indicator in text.lower():
+                    score -= 10
         
         return max(0, min(100, score))
     

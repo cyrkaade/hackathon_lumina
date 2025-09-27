@@ -60,7 +60,7 @@ class WorkerPerformance(BaseModel):
 async def upload_call(
     background_tasks: BackgroundTasks,
     file: UploadFile = File(...),
-    language: str = "ru"
+    language: str = None
 ):
     
     if not file.filename.endswith(('.wav', '.mp3', '.m4a')):
@@ -180,7 +180,7 @@ async def process_call_assessment(
     call_id: str,
     worker_id: int,
     file_path: str,
-    language: str
+    language: str = None
 ):
 
     
@@ -188,21 +188,23 @@ async def process_call_assessment(
 
         transcription = speech_recognizer.transcribe_audio(file_path, language)
         
+        # Get the detected language from transcription
+        detected_language = transcription.get("language", "ru")
+        print(f"Processing call in language: {detected_language}")
 
         worker_text, customer_text = speech_recognizer.separate_speakers(
             transcription["segments"]
         )
         
-
-        emotions = emotion_analyzer.analyze_emotions(customer_text)
+        emotions = emotion_analyzer.analyze_emotions(customer_text, detected_language)
         emotion_progression = emotion_analyzer.track_emotion_progression(
-            transcription["segments"]
+            transcription["segments"], detected_language
         )
         
-
         resolution = resolution_detector.detect_issue_resolution(
             transcription["text"],
-            customer_text
+            customer_text,
+            detected_language
         )
         
 
@@ -214,8 +216,10 @@ async def process_call_assessment(
             "customer_text": customer_text,
             "response_times": calculate_response_times(transcription["segments"]),
             "interruptions": count_interruptions(transcription["segments"]),
-            "greeting": check_greeting(worker_text),
-            "closing": check_closing(worker_text)
+            "greeting": check_greeting(worker_text, detected_language),
+            "closing": check_closing(worker_text, detected_language),
+            "language": detected_language,
+            "transcription": transcription
         }
         
         scores = scoring_engine.calculate_total_score(call_analysis)
@@ -342,15 +346,23 @@ def count_interruptions(segments: List) -> int:
 
     return interruptions
 
-def check_greeting(text: str) -> bool:
+def check_greeting(text: str, language: str = "ru") -> bool:
+    greetings = {
+        "ru": ["здравствуйте", "добрый день", "добрый вечер", "доброе утро", "привет"],
+        "kk": ["сәлеметсіз бе", "қайырлы күн", "қайырлы кеш", "қайырлы таң", "сәлем"]
+    }
+    
+    lang_greetings = greetings.get(language, greetings["ru"])
+    return any(g in text.lower()[:100] for g in lang_greetings)
 
-    greetings = ["здравствуйте", "добрый день", "добрый вечер", "доброе утро"]
-    return any(g in text.lower()[:100] for g in greetings)
-
-def check_closing(text: str) -> bool:
-
-    closings = ["до свидания", "всего доброго", "хорошего дня", "спасибо за звонок"]
-    return any(c in text.lower()[-200:] for c in closings)
+def check_closing(text: str, language: str = "ru") -> bool:
+    closings = {
+        "ru": ["до свидания", "всего доброго", "хорошего дня", "спасибо за звонок", "пока"],
+        "kk": ["сау болыңыз", "барлығы жақсы", "жақсы күн", "қоңырау үшін рахмет", "қош болыңыз"]
+    }
+    
+    lang_closings = closings.get(language, closings["ru"])
+    return any(c in text.lower()[-200:] for c in lang_closings)
 
 def save_assessment_to_db(call_id: str, worker_id: int, scores: Dict, analysis: Dict):
     assessment_data = {

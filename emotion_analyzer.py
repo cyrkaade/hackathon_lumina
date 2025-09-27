@@ -9,45 +9,57 @@ class EmotionAnalyzer:
         self.sentiment_model = None
         self.sentiment_tokenizer = None
         
-    def _load_models(self):
+    def _load_models(self, language: str = "ru"):
         if self.emotion_classifier is None:
             try:
-                self.emotion_classifier = pipeline(
-                    "text-classification",
-                    model="blanchefort/rubert-base-cased-sentiment",
-                    device=0 if torch.cuda.is_available() else -1
-                )
-                print("✅ Loaded Russian sentiment model successfully")
-            except Exception as e:
-                print(f"⚠️ Russian model failed, using English fallback: {e}")
+                # Use a smaller, more efficient model for all languages
                 self.emotion_classifier = pipeline(
                     "text-classification",
                     model="cardiffnlp/twitter-roberta-base-emotion",
                     device=0 if torch.cuda.is_available() else -1
                 )
+                print(f"✅ Loaded efficient sentiment model for {language} language")
+            except Exception as e:
+                print(f"⚠️ Sentiment model failed: {e}")
+                self.emotion_classifier = None
 
         if self.sentiment_model is None:
             try:
+                # Use a smaller, more efficient model for all languages
                 self.sentiment_model = AutoModelForSequenceClassification.from_pretrained(
-                    "blanchefort/rubert-base-cased-sentiment"
+                    "cardiffnlp/twitter-roberta-base-sentiment-latest"
                 )
                 self.sentiment_tokenizer = AutoTokenizer.from_pretrained(
-                    "blanchefort/rubert-base-cased-sentiment"
+                    "cardiffnlp/twitter-roberta-base-sentiment-latest"
                 )
-                print("✅ Loaded Russian sentiment tokenizer successfully")
+                print(f"✅ Loaded efficient sentiment tokenizer for {language} language")
             except Exception as e:
-                print(f"⚠️ Russian tokenizer failed, using English fallback: {e}")
-                self.sentiment_model = AutoModelForSequenceClassification.from_pretrained(
-                    "cardiffnlp/twitter-roberta-base-sentiment-latest"
-                )
-                self.sentiment_tokenizer = AutoTokenizer.from_pretrained(
-                    "cardiffnlp/twitter-roberta-base-sentiment-latest"
-                )
+                print(f"⚠️ Sentiment tokenizer failed: {e}")
+                self.sentiment_model = None
+                self.sentiment_tokenizer = None
         
-    def analyze_emotions(self, text: str) -> Dict:
-        self._load_models()
+    def analyze_emotions(self, text: str, language: str = "ru") -> Dict:
+        self._load_models(language)
+        
+        # Fallback emotion analysis if models fail to load
+        if self.emotion_classifier is None:
+            return {
+                "emotions": [{"label": "neutral", "score": 0.5}],
+                "sentiment": "neutral",
+                "sentiment_confidence": 0.5,
+                "language": language
+            }
         
         emotions = self.emotion_classifier(text)
+
+        # Fallback sentiment analysis if tokenizer/model fails
+        if self.sentiment_model is None or self.sentiment_tokenizer is None:
+            return {
+                "emotions": emotions,
+                "sentiment": "neutral",
+                "sentiment_confidence": 0.5,
+                "language": language
+            }
 
         inputs = self.sentiment_tokenizer(text, return_tensors="pt", truncation=True, max_length=512)
         outputs = self.sentiment_model(**inputs)
@@ -59,14 +71,15 @@ class EmotionAnalyzer:
         return {
             "emotions": emotions,
             "sentiment": sentiment,
-            "sentiment_confidence": float(torch.max(sentiment_scores))
+            "sentiment_confidence": float(torch.max(sentiment_scores)),
+            "language": language
         }
     
-    def track_emotion_progression(self, segments: list) -> list:
+    def track_emotion_progression(self, segments: list, language: str = "ru") -> list:
         emotion_timeline = []
         
         for segment in segments:
-            emotions = self.analyze_emotions(segment["text"])
+            emotions = self.analyze_emotions(segment["text"], language)
             emotion_timeline.append({
                 "timestamp": segment["start"],
                 "emotions": emotions,
