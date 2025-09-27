@@ -1,0 +1,128 @@
+{
+  "call_id": "8400ba93-cfaa-4035-885b-c513c0679e51",
+  "worker_id": 1,
+  "scores": {
+    "total_score": 53.0,
+    "emotion_score": 30,
+    "resolution_score": 50,
+    "communication_score": 80,
+    "professionalism_score": 60,
+    "breakdown": {
+      "strengths": [],
+      "improvements": [
+        "Work on empathy and emotional connection"
+      ]
+    }
+  },
+  "analysis": {
+    "emotions": {
+      "emotions": [
+        {
+          "label": "NEUTRAL",
+          "score": 0.712843656539917
+        }
+      ],
+      "sentiment": "negative",
+      "sentiment_confidence": 0.712843656539917
+    },
+    "emotion_progression": [
+      {
+        "timestamp": 0.0,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "NEGATIVE",
+              "score": 0.7514835000038147
+            }
+          ],
+          "sentiment": "positive",
+          "sentiment_confidence": 0.7514835000038147
+        },
+        "text_snippet": " Здравствуйте, меня зовут Ужас, меня проблема в том, что я не могу загрузить карта."
+      },
+      {
+        "timestamp": 6.98,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "NEUTRAL",
+              "score": 0.7604910731315613
+            }
+          ],
+          "sentiment": "negative",
+          "sentiment_confidence": 0.7604910731315613
+        },
+        "text_snippet": " Здравствуйте, Ужас, спасибо за просhing."
+      },
+      {
+        "timestamp": 11.42,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "NEUTRAL",
+              "score": 0.818837583065033
+            }
+          ],
+          "sentiment": "negative",
+          "sentiment_confidence": 0.818837583065033
+        },
+        "text_snippet": " Проблема дышается, так подожди пару секунд, оставайтесь на линии."
+      },
+      {
+        "timestamp": 17.54,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "NEGATIVE",
+              "score": 0.7514282464981079
+            }
+          ],
+          "sentiment": "positive",
+          "sentiment_confidence": 0.7514282464981079
+        },
+        "text_snippet": " Изняюсь Ужас, ваша проблема дышена."
+      },
+      {
+        "timestamp": 20.36,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "NEUTRAL",
+              "score": 0.8226840496063232
+            }
+          ],
+          "sentiment": "negative",
+          "sentiment_confidence": 0.8226840496063232
+        },
+        "text_snippet": " Можешь и проедем в своем банковском аккаунте."
+      },
+      {
+        "timestamp": 22.88,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "NEUTRAL",
+              "score": 0.7863098382949829
+            }
+          ],
+          "sentiment": "negative",
+          "sentiment_confidence": 0.7863098382949829
+        },
+        "text_snippet": " До свидания."
+      }
+    ],
+    "resolution": {
+      "resolved": false,
+      "resolution_score": 50,
+      "status": "unclear",
+      "final_sentiment": "neutral"
+    },
+    "worker_text": "",
+    "customer_text": "",
+    "response_times": [],
+    "interruptions": 0,
+    "greeting": false,
+    "closing": false
+  },
+  "timestamp": "2025-09-28T00:24:38.027725"
+}

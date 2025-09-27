@@ -2,6 +2,7 @@ services:
   - type: web
     name: call-center-api
     env: python
+    plan: starter
     buildCommand: pip install -r requirements.txt
     startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
     envVars:
@@ -9,4 +10,6 @@ services:
         value: 3.9.18
       - key: PORT
         value: 10000
+      - key: WHISPER_MODEL_SIZE
+        value: base
 

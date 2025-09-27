@@ -9,7 +9,9 @@ import subprocess
 import tempfile
 
 class SpeechRecognizer:
-    def __init__(self, model_size="base"):
+    def __init__(self, model_size=None):
+        if model_size is None:
+            model_size = os.environ.get("WHISPER_MODEL_SIZE", "base")
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
         try:
             self.model = whisper.load_model(model_size, device=self.device)
