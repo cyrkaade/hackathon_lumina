@@ -1,0 +1,422 @@
+{
+  "id": "9974414a-77ac-47db-ab12-3e543a0b958c",
+  "worker_id": 1,
+  "timestamp": "2025-09-28T08:15:10.797346",
+  "scores": {
+    "total_score": 51.7,
+    "performance_grade": "Poor",
+    "emotion_score": 52.7,
+    "resolution_score": 50,
+    "communication_score": 50,
+    "professionalism_score": 50,
+    "empathy_score": 60,
+    "efficiency_score": 50,
+    "breakdown": {
+      "strengths": [],
+      "improvements": [
+        "Improve emotional connection with customers",
+        "Strengthen problem resolution techniques",
+        "Enhance communication clarity and helpfulness",
+        "Maintain higher professional standards",
+        "Show more empathy toward customers",
+        "Improve call efficiency and time management"
+      ],
+      "detailed_analysis": {
+        "call_duration": 0,
+        "language_detected": "ru",
+        "greeting_provided": false,
+        "proper_closing": false,
+        "interruption_count": 0,
+        "average_response_time": 11.370000000000001,
+        "customer_sentiment": "neutral",
+        "issue_resolved": false,
+        "worker_text_length": 0,
+        "customer_text_length": 32
+      }
+    }
+  },
+  "analysis": {
+    "emotions": {
+      "emotions": [
+        {
+          "label": "optimism",
+          "score": 0.658328115940094
+        }
+      ],
+      "sentiment": "neutral",
+      "sentiment_confidence": 0.5474984347820282,
+      "language": "ru",
+      "analysis_method": "ml_keyword_combined"
+    },
+    "emotion_progression": [
+      {
+        "timestamp": 3.0399999999999996,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "anger",
+              "score": 0.33235371112823486
+            }
+          ],
+          "sentiment": "neutral",
+          "sentiment_confidence": 0.5,
+          "language": "ru",
+          "analysis_method": "ml_keyword_combined"
+        },
+        "text_snippet": "Hope�TH NU addition"
+      },
+      {
+        "timestamp": 28.580000000000002,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "joy",
+              "score": 0.3576052486896515
+            }
+          ],
+          "sentiment": "neutral",
+          "sentiment_confidence": 0.5,
+          "language": "ru",
+          "analysis_method": "ml_keyword_combined"
+        },
+        "text_snippet": " council"
+      },
+      {
+        "timestamp": 29.98,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "neutral",
+              "score": 0.5
+            }
+          ],
+          "sentiment": "neutral",
+          "sentiment_confidence": 0.5,
+          "language": "ru"
+        },
+        "text_snippet": ""
+      },
+      {
+        "timestamp": 29.98,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "neutral",
+              "score": 0.5
+            }
+          ],
+          "sentiment": "neutral",
+          "sentiment_confidence": 0.5,
+          "language": "ru"
+        },
+        "text_snippet": ""
+      },
+      {
+        "timestamp": 29.98,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "neutral",
+              "score": 0.5
+            }
+          ],
+          "sentiment": "neutral",
+          "sentiment_confidence": 0.5,
+          "language": "ru"
+        },
+        "text_snippet": ""
+      },
+      {
+        "timestamp": 29.98,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "neutral",
+              "score": 0.5
+            }
+          ],
+          "sentiment": "neutral",
+          "sentiment_confidence": 0.5,
+          "language": "ru"
+        },
+        "text_snippet": ""
+      },
+      {
+        "timestamp": 29.98,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "neutral",
+              "score": 0.5
+            }
+          ],
+          "sentiment": "neutral",
+          "sentiment_confidence": 0.5,
+          "language": "ru"
+        },
+        "text_snippet": ""
+      },
+      {
+        "timestamp": 29.98,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "neutral",
+              "score": 0.5
+            }
+          ],
+          "sentiment": "neutral",
+          "sentiment_confidence": 0.5,
+          "language": "ru"
+        },
+        "text_snippet": ""
+      },
+      {
+        "timestamp": 29.98,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "neutral",
+              "score": 0.5
+            }
+          ],
+          "sentiment": "neutral",
+          "sentiment_confidence": 0.5,
+          "language": "ru"
+        },
+        "text_snippet": ""
+      },
+      {
+        "timestamp": 30.0,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "optimism",
+              "score": 0.49728021025657654
+            }
+          ],
+          "sentiment": "neutral",
+          "sentiment_confidence": 0.49918406307697294,
+          "language": "ru",
+          "analysis_method": "ml_keyword_combined"
+        },
+        "text_snippet": " СМЕХ"
+      }
+    ],
+    "resolution": {
+      "resolved": false,
+      "resolution_score": 50,
+      "status": "unclear",
+      "final_sentiment": "neutral",
+      "language": "ru"
+    },
+    "worker_text": "",
+    "customer_text": "Hope�TH NU addition council СМЕХ",
+    "response_times": [
+      22.720000000000002,
+      0.019999999999999574
+    ],
+    "interruptions": 0,
+    "greeting": false,
+    "closing": false,
+    "language": "ru",
+    "transcription": {
+      "text": "Hope�TH NU addition council СМЕХ",
+      "segments": [
+        {
+          "id": 0,
+          "seek": 0,
+          "start": 3.0399999999999996,
+          "end": 5.86,
+          "text": "Hope�TH NU addition",
+          "tokens": [
+            50364,
+            46959,
+            230,
+            9620,
+            426,
+            52,
+            4500,
+            50484
+          ],
+          "temperature": 1.0,
+          "avg_logprob": -5.343995527787642,
+          "compression_ratio": 0.912,
+          "no_speech_prob": 0.28227657079696655,
+          "words": [
+            {
+              "word": "Hope�TH",
+              "start": 3.0399999999999996,
+              "end": 4.4399999999999995,
+              "probability": 0.00016072170713717546
+            },
+            {
+              "word": " NU",
+              "start": 4.4399999999999995,
+              "end": 5.84,
+              "probability": 0.021283905021846294
+            },
+            {
+              "word": " addition",
+              "start": 5.84,
+              "end": 5.86,
+              "probability": 0.0001616757654119283
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "seek": 0,
+          "start": 28.580000000000002,
+          "end": 29.98,
+          "text": " council",
+          "tokens": [
+            50484,
+            9209,
+            50586
+          ],
+          "temperature": 1.0,
+          "avg_logprob": -5.343995527787642,
+          "compression_ratio": 0.912,
+          "no_speech_prob": 0.28227657079696655,
+          "words": [
+            {
+              "word": " council",
+              "start": 28.580000000000002,
+              "end": 29.98,
+              "probability": 2.686786274352926e-06
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "seek": 0,
+          "start": 29.98,
+          "end": 29.98,
+          "text": "",
+          "tokens": [],
+          "temperature": 1.0,
+          "avg_logprob": -5.343995527787642,
+          "compression_ratio": 0.912,
+          "no_speech_prob": 0.28227657079696655,
+          "words": []
+        },
+        {
+          "id": 3,
+          "seek": 0,
+          "start": 29.98,
+          "end": 29.98,
+          "text": "",
+          "tokens": [],
+          "temperature": 1.0,
+          "avg_logprob": -5.343995527787642,
+          "compression_ratio": 0.912,
+          "no_speech_prob": 0.28227657079696655,
+          "words": []
+        },
+        {
+          "id": 4,
+          "seek": 0,
+          "start": 29.98,
+          "end": 29.98,
+          "text": "",
+          "tokens": [],
+          "temperature": 1.0,
+          "avg_logprob": -5.343995527787642,
+          "compression_ratio": 0.912,
+          "no_speech_prob": 0.28227657079696655,
+          "words": []
+        },
+        {
+          "id": 5,
+          "seek": 0,
+          "start": 29.98,
+          "end": 29.98,
+          "text": "",
+          "tokens": [],
+          "temperature": 1.0,
+          "avg_logprob": -5.343995527787642,
+          "compression_ratio": 0.912,
+          "no_speech_prob": 0.28227657079696655,
+          "words": []
+        },
+        {
+          "id": 6,
+          "seek": 0,
+          "start": 29.98,
+          "end": 29.98,
+          "text": "",
+          "tokens": [],
+          "temperature": 1.0,
+          "avg_logprob": -5.343995527787642,
+          "compression_ratio": 0.912,
+          "no_speech_prob": 0.28227657079696655,
+          "words": []
+        },
+        {
+          "id": 7,
+          "seek": 0,
+          "start": 29.98,
+          "end": 29.98,
+          "text": "",
+          "tokens": [],
+          "temperature": 1.0,
+          "avg_logprob": -5.343995527787642,
+          "compression_ratio": 0.912,
+          "no_speech_prob": 0.28227657079696655,
+          "words": []
+        },
+        {
+          "id": 8,
+          "seek": 0,
+          "start": 29.98,
+          "end": 29.98,
+          "text": "",
+          "tokens": [],
+          "temperature": 1.0,
+          "avg_logprob": -5.343995527787642,
+          "compression_ratio": 0.912,
+          "no_speech_prob": 0.28227657079696655,
+          "words": []
+        },
+        {
+          "id": 9,
+          "seek": 3000,
+          "start": 30.0,
+          "end": 30.34,
+          "text": " СМЕХ",
+          "tokens": [
+            50364,
+            2933,
+            10626,
+            10156,
+            24665,
+            50464
+          ],
+          "temperature": 0.0,
+          "avg_logprob": -0.9469361986432757,
+          "compression_ratio": 0.47058823529411764,
+          "no_speech_prob": 0.620693564414978,
+          "words": [
+            {
+              "word": " СМЕХ",
+              "start": 30.0,
+              "end": 30.34,
+              "probability": 0.4378283228725195
+            }
+          ]
+        }
+      ],
+      "language": "ru",
+      "detected_language": "ru",
+      "duration": 0
+    },
+    "ai_enhanced": {
+      "speech_recognition": false,
+      "emotion_analysis": false,
+      "transcription_enhanced": false,
+      "speaker_separation_enhanced": false,
+      "emotion_analysis_enhanced": false
+    }
+  }
+}
