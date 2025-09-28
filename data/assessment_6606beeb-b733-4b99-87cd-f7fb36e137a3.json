@@ -1,0 +1,661 @@
+{
+  "call_id": "6606beeb-b733-4b99-87cd-f7fb36e137a3",
+  "worker_id": 1,
+  "scores": {
+    "total_score": 53.64,
+    "emotion_score": 52.55,
+    "resolution_score": 50,
+    "communication_score": 65,
+    "professionalism_score": 50,
+    "breakdown": {
+      "strengths": [],
+      "improvements": [
+        "Work on empathy and emotional connection"
+      ]
+    }
+  },
+  "analysis": {
+    "emotions": {
+      "emotions": [
+        {
+          "label": "optimism",
+          "score": 0.5322674512863159
+        }
+      ],
+      "sentiment": "neutral",
+      "sentiment_confidence": 0.5096802353858947,
+      "language": "ru",
+      "analysis_method": "ml_keyword_combined"
+    },
+    "emotion_progression": [
+      {
+        "timestamp": 0.0,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "optimism",
+              "score": 0.4022725820541382
+            }
+          ],
+          "sentiment": "neutral",
+          "sentiment_confidence": 0.47068177461624144,
+          "language": "ru",
+          "analysis_method": "ml_keyword_combined"
+        },
+        "text_snippet": " да-到了"
+      },
+      {
+        "timestamp": 1.62,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "optimism",
+              "score": 0.5700483322143555
+            }
+          ],
+          "sentiment": "neutral",
+          "sentiment_confidence": 0.5210144996643066,
+          "language": "ru",
+          "analysis_method": "ml_keyword_combined"
+        },
+        "text_snippet": " самр Lazuba, Kyanda最近 геннеж"
+      },
+      {
+        "timestamp": 4.5,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "optimism",
+              "score": 0.353873610496521
+            }
+          ],
+          "sentiment": "neutral",
+          "sentiment_confidence": 0.4561620831489563,
+          "language": "ru",
+          "analysis_method": "ml_keyword_combined"
+        },
+        "text_snippet": " мне им в банк шир quot-то"
+      },
+      {
+        "timestamp": 6.76,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "optimism",
+              "score": 0.49091067910194397
+            }
+          ],
+          "sentiment": "neutral",
+          "sentiment_confidence": 0.49727320373058315,
+          "language": "ru",
+          "analysis_method": "ml_keyword_combined"
+        },
+        "text_snippet": " да чой cheapest, чем пока у gaziders"
+      },
+      {
+        "timestamp": 11.78,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "optimism",
+              "score": 0.35382264852523804
+            }
+          ],
+          "sentiment": "neutral",
+          "sentiment_confidence": 0.4561467945575714,
+          "language": "ru",
+          "analysis_method": "ml_keyword_combined"
+        },
+        "text_snippet": " а потом сказал черт"
+      },
+      {
+        "timestamp": 20.9,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "optimism",
+              "score": 0.44488775730133057
+            }
+          ],
+          "sentiment": "neutral",
+          "sentiment_confidence": 0.48346632719039917,
+          "language": "ru",
+          "analysis_method": "ml_keyword_combined"
+        },
+        "text_snippet": " там поможу"
+      },
+      {
+        "timestamp": 22.9,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "optimism",
+              "score": 0.34644997119903564
+            }
+          ],
+          "sentiment": "neutral",
+          "sentiment_confidence": 0.45393499135971066,
+          "language": "ru",
+          "analysis_method": "ml_keyword_combined"
+        },
+        "text_snippet": " это сам жалко"
+      },
+      {
+        "timestamp": 28.3,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "neutral",
+              "score": 0.5
+            }
+          ],
+          "sentiment": "neutral",
+          "sentiment_confidence": 0.5,
+          "language": "ru"
+        },
+        "text_snippet": ""
+      },
+      {
+        "timestamp": 28.3,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "optimism",
+              "score": 0.5860048532485962
+            }
+          ],
+          "sentiment": "neutral",
+          "sentiment_confidence": 0.5258014559745788,
+          "language": "ru",
+          "analysis_method": "ml_keyword_combined"
+        },
+        "text_snippet": "ц being champion"
+      },
+      {
+        "timestamp": 29.98,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "neutral",
+              "score": 0.5
+            }
+          ],
+          "sentiment": "neutral",
+          "sentiment_confidence": 0.5,
+          "language": "ru"
+        },
+        "text_snippet": ""
+      },
+      {
+        "timestamp": 29.98,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "optimism",
+              "score": 0.49728021025657654
+            }
+          ],
+          "sentiment": "neutral",
+          "sentiment_confidence": 0.49918406307697294,
+          "language": "ru",
+          "analysis_method": "ml_keyword_combined"
+        },
+        "text_snippet": " СМЕХ"
+      }
+    ],
+    "resolution": {
+      "resolved": false,
+      "resolution_score": 50,
+      "status": "unclear",
+      "final_sentiment": "neutral",
+      "language": "ru"
+    },
+    "worker_text": "",
+    "customer_text": "да-到了 самр Lazuba, Kyanda最近 геннеж мне им в банк шир quot-то да чой cheapest, чем пока у gaziders а потом сказал черт там поможу это сам жалко ц being champion СМЕХ",
+    "response_times": [],
+    "interruptions": 0,
+    "greeting": false,
+    "closing": false,
+    "language": "ru",
+    "transcription": {
+      "text": " да-到了 самр Lazuba, Kyanda最近 геннеж мне им в банк шир quot-то да чой cheapest, чем пока у gaziders а потом сказал черт там поможу это сам жалкоц being champion СМЕХ",
+      "segments": [
+        {
+          "id": 0,
+          "seek": 0,
+          "start": 0.0,
+          "end": 1.62,
+          "text": " да-到了",
+          "tokens": [
+            50364,
+            8995,
+            12,
+            21381,
+            50464
+          ],
+          "temperature": 1.0,
+          "avg_logprob": -5.312815739558293,
+          "compression_ratio": 1.2991071428571428,
+          "no_speech_prob": 0.28227657079696655,
+          "words": [
+            {
+              "word": " да",
+              "start": 0.0,
+              "end": 1.62,
+              "probability": 0.000330829294398427
+            },
+            {
+              "word": "-到了",
+              "start": 1.62,
+              "end": 1.62,
+              "probability": 0.01189794201593486
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "seek": 0,
+          "start": 1.62,
+          "end": 4.5,
+          "text": " самр Lazuba, Kyanda最近 геннеж",
+          "tokens": [
+            50468,
+            5602,
+            481,
+            46469,
+            12584,
+            11,
+            12237,
+            5575,
+            46777,
+            2342,
+            1008,
+            489,
+            6029,
+            50600
+          ],
+          "temperature": 1.0,
+          "avg_logprob": -5.312815739558293,
+          "compression_ratio": 1.2991071428571428,
+          "no_speech_prob": 0.28227657079696655,
+          "words": [
+            {
+              "word": " самр",
+              "start": 1.62,
+              "end": 1.76,
+              "probability": 0.002499818423530087
+            },
+            {
+              "word": " Lazuba,",
+              "start": 1.76,
+              "end": 2.32,
+              "probability": 0.0044915102153026965
+            },
+            {
+              "word": " Kyanda最近",
+              "start": 2.56,
+              "end": 3.94,
+              "probability": 0.07429758205429
+            },
+            {
+              "word": " геннеж",
+              "start": 3.94,
+              "end": 4.5,
+              "probability": 0.11361522041261196
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "seek": 0,
+          "start": 4.5,
+          "end": 6.76,
+          "text": " мне им в банк шир quot-то",
+          "tokens": [
+            50606,
+            8531,
+            7604,
+            740,
+            29049,
+            755,
+            44583,
+            9641,
+            12,
+            860,
+            50748
+          ],
+          "temperature": 1.0,
+          "avg_logprob": -5.312815739558293,
+          "compression_ratio": 1.2991071428571428,
+          "no_speech_prob": 0.28227657079696655,
+          "words": [
+            {
+              "word": " мне",
+              "start": 4.5,
+              "end": 5.4,
+              "probability": 1.2557005902635865e-05
+            },
+            {
+              "word": " им",
+              "start": 5.4,
+              "end": 5.88,
+              "probability": 0.009589959867298603
+            },
+            {
+              "word": " в",
+              "start": 5.88,
+              "end": 6.28,
+              "probability": 0.09278371185064316
+            },
+            {
+              "word": " банк",
+              "start": 6.28,
+              "end": 6.28,
+              "probability": 0.4262688308954239
+            },
+            {
+              "word": " шир",
+              "start": 6.28,
+              "end": 6.54,
+              "probability": 0.005996064282953739
+            },
+            {
+              "word": " quot",
+              "start": 6.54,
+              "end": 6.6,
+              "probability": 1.479144975746749e-05
+            },
+            {
+              "word": "-то",
+              "start": 6.6,
+              "end": 6.76,
+              "probability": 0.28148221340961754
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "seek": 0,
+          "start": 6.76,
+          "end": 11.78,
+          "text": " да чой cheapest, чем пока у gaziders",
+          "tokens": [
+            50752,
+            8995,
+            1358,
+            1700,
+            29167,
+            11,
+            12056,
+            17770,
+            1595,
+            26232,
+            6936,
+            50878
+          ],
+          "temperature": 1.0,
+          "avg_logprob": -5.312815739558293,
+          "compression_ratio": 1.2991071428571428,
+          "no_speech_prob": 0.28227657079696655,
+          "words": [
+            {
+              "word": " да",
+              "start": 6.76,
+              "end": 7.38,
+              "probability": 0.004021055996417999
+            },
+            {
+              "word": " чой",
+              "start": 7.38,
+              "end": 7.66,
+              "probability": 0.0037966392264934257
+            },
+            {
+              "word": " cheapest,",
+              "start": 7.66,
+              "end": 7.86,
+              "probability": 7.670186619179731e-07
+            },
+            {
+              "word": " чем",
+              "start": 7.86,
+              "end": 7.86,
+              "probability": 0.014404091984033585
+            },
+            {
+              "word": " пока",
+              "start": 7.86,
+              "end": 8.36,
+              "probability": 0.0002537794061936438
+            },
+            {
+              "word": " у",
+              "start": 8.36,
+              "end": 11.78,
+              "probability": 0.022393956780433655
+            },
+            {
+              "word": " gaziders",
+              "start": 11.78,
+              "end": 11.78,
+              "probability": 6.918333542671462e-05
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "seek": 0,
+          "start": 11.78,
+          "end": 13.48,
+          "text": " а потом сказал черт",
+          "tokens": [
+            50914,
+            2559,
+            16873,
+            24980,
+            12360,
+            403,
+            51038
+          ],
+          "temperature": 1.0,
+          "avg_logprob": -5.312815739558293,
+          "compression_ratio": 1.2991071428571428,
+          "no_speech_prob": 0.28227657079696655,
+          "words": [
+            {
+              "word": " а",
+              "start": 11.78,
+              "end": 12.0,
+              "probability": 0.0026071530301123857
+            },
+            {
+              "word": " потом",
+              "start": 12.0,
+              "end": 12.5,
+              "probability": 0.007191136013716459
+            },
+            {
+              "word": " сказал",
+              "start": 12.5,
+              "end": 12.5,
+              "probability": 8.643773617222905e-05
+            },
+            {
+              "word": " черт",
+              "start": 12.5,
+              "end": 13.48,
+              "probability": 0.07760615954248351
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "seek": 0,
+          "start": 20.9,
+          "end": 22.9,
+          "text": " там поможу",
+          "tokens": [
+            51050,
+            8223,
+            8613,
+            45621,
+            51197
+          ],
+          "temperature": 1.0,
+          "avg_logprob": -5.312815739558293,
+          "compression_ratio": 1.2991071428571428,
+          "no_speech_prob": 0.28227657079696655,
+          "words": [
+            {
+              "word": " там",
+              "start": 20.9,
+              "end": 21.9,
+              "probability": 0.0004562645626720041
+            },
+            {
+              "word": " поможу",
+              "start": 21.9,
+              "end": 22.9,
+              "probability": 0.00022806225751992315
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "seek": 0,
+          "start": 22.9,
+          "end": 28.3,
+          "text": " это сам жалко",
+          "tokens": [
+            51210,
+            2691,
+            5602,
+            2989,
+            1218,
+            3752,
+            51212
+          ],
+          "temperature": 1.0,
+          "avg_logprob": -5.312815739558293,
+          "compression_ratio": 1.2991071428571428,
+          "no_speech_prob": 0.28227657079696655,
+          "words": [
+            {
+              "word": " это",
+              "start": 22.9,
+              "end": 22.9,
+              "probability": 0.002720403717830777
+            },
+            {
+              "word": " сам",
+              "start": 22.9,
+              "end": 27.98,
+              "probability": 0.005344752222299576
+            },
+            {
+              "word": " жалко",
+              "start": 27.98,
+              "end": 28.3,
+              "probability": 0.11636323823283116
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "seek": 0,
+          "start": 28.3,
+          "end": 28.3,
+          "text": "",
+          "tokens": [],
+          "temperature": 1.0,
+          "avg_logprob": -5.312815739558293,
+          "compression_ratio": 1.2991071428571428,
+          "no_speech_prob": 0.28227657079696655,
+          "words": []
+        },
+        {
+          "id": 8,
+          "seek": 0,
+          "start": 28.3,
+          "end": 29.98,
+          "text": "ц being champion",
+          "tokens": [
+            51404,
+            1814,
+            885,
+            10971,
+            51567
+          ],
+          "temperature": 1.0,
+          "avg_logprob": -5.312815739558293,
+          "compression_ratio": 1.2991071428571428,
+          "no_speech_prob": 0.28227657079696655,
+          "words": [
+            {
+              "word": " being",
+              "start": 28.3,
+              "end": 28.3,
+              "probability": 1.938172135851346e-05
+            },
+            {
+              "word": " champion",
+              "start": 28.3,
+              "end": 28.3,
+              "probability": 0.0008081988198682666
+            },
+            {
+              "word": " от",
+              "start": 28.3,
+              "end": 29.98,
+              "probability": 9.160763875115663e-05
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "seek": 0,
+          "start": 29.98,
+          "end": 29.98,
+          "text": "",
+          "tokens": [],
+          "temperature": 1.0,
+          "avg_logprob": -5.312815739558293,
+          "compression_ratio": 1.2991071428571428,
+          "no_speech_prob": 0.28227657079696655,
+          "words": []
+        },
+        {
+          "id": 10,
+          "seek": 2998,
+          "start": 29.98,
+          "end": 30.34,
+          "text": " СМЕХ",
+          "tokens": [
+            50364,
+            2933,
+            10626,
+            10156,
+            24665,
+            50464
+          ],
+          "temperature": 0.0,
+          "avg_logprob": -0.9501322337559291,
+          "compression_ratio": 0.47058823529411764,
+          "no_speech_prob": 0.6464101672172546,
+          "words": [
+            {
+              "word": " СМЕХ",
+              "start": 29.98,
+              "end": 30.34,
+              "probability": 0.4376742336899042
+            }
+          ]
+        }
+      ],
+      "language": "ru",
+      "detected_language": "ru",
+      "duration": 0
+    }
+  },
+  "timestamp": "2025-09-28T06:07:19.570169"
+}

@@ -39,10 +39,10 @@ class EmotionAnalyzer:
                 self.sentiment_tokenizer = None
         
     def analyze_emotions(self, text: str, language: str = "ru") -> Dict:
-        self._load_models(language)
+        print(f"😊 Analyzing emotions for text: '{text[:100]}...' in language: {language}")
         
-        # Fallback emotion analysis if models fail to load
-        if self.emotion_classifier is None:
+        if not text or not text.strip():
+            print("⚠️ Empty text provided for emotion analysis")
             return {
                 "emotions": [{"label": "neutral", "score": 0.5}],
                 "sentiment": "neutral",
@@ -50,30 +50,107 @@ class EmotionAnalyzer:
                 "language": language
             }
         
-        emotions = self.emotion_classifier(text)
-
-        # Fallback sentiment analysis if tokenizer/model fails
-        if self.sentiment_model is None or self.sentiment_tokenizer is None:
-            return {
-                "emotions": emotions,
-                "sentiment": "neutral",
-                "sentiment_confidence": 0.5,
-                "language": language
-            }
-
-        inputs = self.sentiment_tokenizer(text, return_tensors="pt", truncation=True, max_length=512)
-        outputs = self.sentiment_model(**inputs)
-        sentiment_scores = torch.nn.functional.softmax(outputs.logits, dim=-1)
+        # First try keyword-based analysis (more reliable for Russian/Kazakh)
+        print("🔍 Running keyword-based sentiment analysis...")
+        keyword_sentiment = self._analyze_sentiment_keywords(text, language)
+        print(f"🔍 Keyword analysis result: {keyword_sentiment}")
         
-        sentiment_labels = ['negative', 'neutral', 'positive']
-        sentiment = sentiment_labels[torch.argmax(sentiment_scores)]
+        self._load_models(language)
         
+        # Try ML model analysis if available
+        if self.emotion_classifier is not None:
+            try:
+                emotions = self.emotion_classifier(text)
+                ml_sentiment = self._extract_sentiment_from_emotions(emotions)
+                
+                # Combine keyword and ML analysis
+                final_sentiment = self._combine_sentiment_analysis(keyword_sentiment, ml_sentiment)
+                
+                return {
+                    "emotions": emotions,
+                    "sentiment": final_sentiment["sentiment"],
+                    "sentiment_confidence": final_sentiment["confidence"],
+                    "language": language,
+                    "analysis_method": "ml_keyword_combined"
+                }
+            except Exception as e:
+                print(f"ML emotion analysis failed: {e}")
+        
+        # Fallback to keyword-based analysis
         return {
-            "emotions": emotions,
-            "sentiment": sentiment,
-            "sentiment_confidence": float(torch.max(sentiment_scores)),
-            "language": language
+            "emotions": [{"label": keyword_sentiment["sentiment"], "score": keyword_sentiment["confidence"]}],
+            "sentiment": keyword_sentiment["sentiment"],
+            "sentiment_confidence": keyword_sentiment["confidence"],
+            "language": language,
+            "analysis_method": "keyword_based"
         }
+    
+    def _analyze_sentiment_keywords(self, text: str, language: str = "ru") -> Dict:
+        """Analyze sentiment using keyword matching"""
+        text_lower = text.lower()
+        
+        positive_keywords = {
+            "ru": ["спасибо", "хорошо", "отлично", "понятно", "помогли", "решено", "благодарю", "доволен"],
+            "kk": ["рахмет", "жақсы", "керемет", "түсіндім", "көмектесті", "шешілді", "ризамын", "қуанышты"]
+        }
+        
+        negative_keywords = {
+            "ru": ["плохо", "ужасно", "не работает", "проблема", "злой", "недоволен", "разочарован", "бесполезно"],
+            "kk": ["жаман", "қорқынышты", "жұмыс істемейді", "мәселе", "ашулы", "ризасыз", "көңілі толмаған", "пайдасыз"]
+        }
+        
+        lang_keywords = positive_keywords.get(language, positive_keywords["ru"])
+        lang_negative = negative_keywords.get(language, negative_keywords["ru"])
+        
+        positive_count = sum(1 for word in lang_keywords if word in text_lower)
+        negative_count = sum(1 for word in lang_negative if word in text_lower)
+        
+        if positive_count > negative_count:
+            sentiment = "positive"
+            confidence = min(0.9, 0.5 + (positive_count * 0.1))
+        elif negative_count > positive_count:
+            sentiment = "negative"
+            confidence = min(0.9, 0.5 + (negative_count * 0.1))
+        else:
+            sentiment = "neutral"
+            confidence = 0.5
+        
+        return {"sentiment": sentiment, "confidence": confidence}
+    
+    def _extract_sentiment_from_emotions(self, emotions: list) -> Dict:
+        """Extract sentiment from ML emotion results"""
+        if not emotions:
+            return {"sentiment": "neutral", "confidence": 0.5}
+        
+        # Get the highest scoring emotion
+        top_emotion = max(emotions, key=lambda x: x.get("score", 0))
+        emotion_label = top_emotion.get("label", "").lower()
+        confidence = top_emotion.get("score", 0.5)
+        
+        # Map emotion labels to sentiment
+        if any(word in emotion_label for word in ["positive", "joy", "happy", "satisfied"]):
+            sentiment = "positive"
+        elif any(word in emotion_label for word in ["negative", "anger", "sad", "frustrated", "disappointed"]):
+            sentiment = "negative"
+        else:
+            sentiment = "neutral"
+        
+        return {"sentiment": sentiment, "confidence": confidence}
+    
+    def _combine_sentiment_analysis(self, keyword_result: Dict, ml_result: Dict) -> Dict:
+        """Combine keyword and ML sentiment analysis"""
+        # Weight keyword analysis more heavily for Russian/Kazakh
+        keyword_weight = 0.7
+        ml_weight = 0.3
+        
+        if keyword_result["sentiment"] == ml_result["sentiment"]:
+            # Both agree
+            confidence = (keyword_result["confidence"] * keyword_weight + 
+                         ml_result["confidence"] * ml_weight)
+            return {"sentiment": keyword_result["sentiment"], "confidence": confidence}
+        else:
+            # They disagree, prefer keyword analysis
+            return keyword_result
     
     def track_emotion_progression(self, segments: list, language: str = "ru") -> list:
         emotion_timeline = []

@@ -1,0 +1,1046 @@
+{
+  "call_id": "15fb2dfd-5c48-4da6-a1e5-826430bc516a",
+  "worker_id": 1,
+  "scores": {
+    "total_score": 53.66,
+    "emotion_score": 52.63,
+    "resolution_score": 50,
+    "communication_score": 65,
+    "professionalism_score": 50,
+    "breakdown": {
+      "strengths": [],
+      "improvements": [
+        "Work on empathy and emotional connection"
+      ]
+    }
+  },
+  "analysis": {
+    "emotions": {
+      "emotions": [
+        {
+          "label": "optimism",
+          "score": 0.5876166820526123
+        }
+      ],
+      "sentiment": "neutral",
+      "sentiment_confidence": 0.5262850046157836,
+      "language": "ru",
+      "analysis_method": "ml_keyword_combined"
+    },
+    "emotion_progression": [
+      {
+        "timestamp": 0.0,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "optimism",
+              "score": 0.6511054039001465
+            }
+          ],
+          "sentiment": "neutral",
+          "sentiment_confidence": 0.5453316211700439,
+          "language": "ru",
+          "analysis_method": "ml_keyword_combined"
+        },
+        "text_snippet": " Сама mina."
+      },
+      {
+        "timestamp": 2.26,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "optimism",
+              "score": 0.5808365345001221
+            }
+          ],
+          "sentiment": "neutral",
+          "sentiment_confidence": 0.5242509603500366,
+          "language": "ru",
+          "analysis_method": "ml_keyword_combined"
+        },
+        "text_snippet": " Сама осыпает, Brazilian drink"
+      },
+      {
+        "timestamp": 3.68,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "anger",
+              "score": 0.3855149745941162
+            }
+          ],
+          "sentiment": "neutral",
+          "sentiment_confidence": 0.5,
+          "language": "ru",
+          "analysis_method": "ml_keyword_combined"
+        },
+        "text_snippet": " Un sports with 10 hundred convinced"
+      },
+      {
+        "timestamp": 9.02,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "joy",
+              "score": 0.5315533876419067
+            }
+          ],
+          "sentiment": "neutral",
+          "sentiment_confidence": 0.5,
+          "language": "ru",
+          "analysis_method": "ml_keyword_combined"
+        },
+        "text_snippet": "年 aggressively ahead of some speed"
+      },
+      {
+        "timestamp": 17.04,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "optimism",
+              "score": 0.3616306781768799
+            }
+          ],
+          "sentiment": "neutral",
+          "sentiment_confidence": 0.45848920345306393,
+          "language": "ru",
+          "analysis_method": "ml_keyword_combined"
+        },
+        "text_snippet": " Поторые сверхуūху"
+      },
+      {
+        "timestamp": 18.74,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "optimism",
+              "score": 0.429575651884079
+            }
+          ],
+          "sentiment": "neutral",
+          "sentiment_confidence": 0.47887269556522366,
+          "language": "ru",
+          "analysis_method": "ml_keyword_combined"
+        },
+        "text_snippet": " мы считали не что dzień богатым einsmusicовей,"
+      },
+      {
+        "timestamp": 24.3,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "optimism",
+              "score": 0.4519951045513153
+            }
+          ],
+          "sentiment": "neutral",
+          "sentiment_confidence": 0.48559853136539455,
+          "language": "ru",
+          "analysis_method": "ml_keyword_combined"
+        },
+        "text_snippet": " потому что мы считалиiesen, что такие так安全ANDРые"
+      },
+      {
+        "timestamp": 24.36,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "optimism",
+              "score": 0.351654976606369
+            }
+          ],
+          "sentiment": "neutral",
+          "sentiment_confidence": 0.4554964929819107,
+          "language": "ru",
+          "analysis_method": "ml_keyword_combined"
+        },
+        "text_snippet": " все хотелось не ничего не sticky"
+      },
+      {
+        "timestamp": 24.38,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "sadness",
+              "score": 0.399128794670105
+            }
+          ],
+          "sentiment": "neutral",
+          "sentiment_confidence": 0.5,
+          "language": "ru",
+          "analysis_method": "ml_keyword_combined"
+        },
+        "text_snippet": " не очень тpler Fakehood"
+      },
+      {
+        "timestamp": 28.52,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "neutral",
+              "score": 0.5
+            }
+          ],
+          "sentiment": "neutral",
+          "sentiment_confidence": 0.5,
+          "language": "ru"
+        },
+        "text_snippet": ""
+      },
+      {
+        "timestamp": 28.52,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "optimism",
+              "score": 0.36586400866508484
+            }
+          ],
+          "sentiment": "neutral",
+          "sentiment_confidence": 0.4597592025995254,
+          "language": "ru",
+          "analysis_method": "ml_keyword_combined"
+        },
+        "text_snippet": "icularly дальше"
+      },
+      {
+        "timestamp": 29.48,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "optimism",
+              "score": 0.4438416063785553
+            }
+          ],
+          "sentiment": "neutral",
+          "sentiment_confidence": 0.4831524819135665,
+          "language": "ru",
+          "analysis_method": "ml_keyword_combined"
+        },
+        "text_snippet": " как karşı так сложно"
+      },
+      {
+        "timestamp": 30.34,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "neutral",
+              "score": 0.5
+            }
+          ],
+          "sentiment": "neutral",
+          "sentiment_confidence": 0.5,
+          "language": "ru"
+        },
+        "text_snippet": ""
+      },
+      {
+        "timestamp": 30.34,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "neutral",
+              "score": 0.5
+            }
+          ],
+          "sentiment": "neutral",
+          "sentiment_confidence": 0.5,
+          "language": "ru"
+        },
+        "text_snippet": ""
+      },
+      {
+        "timestamp": 30.34,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "neutral",
+              "score": 0.5
+            }
+          ],
+          "sentiment": "neutral",
+          "sentiment_confidence": 0.5,
+          "language": "ru"
+        },
+        "text_snippet": ""
+      },
+      {
+        "timestamp": 30.34,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "neutral",
+              "score": 0.5
+            }
+          ],
+          "sentiment": "neutral",
+          "sentiment_confidence": 0.5,
+          "language": "ru"
+        },
+        "text_snippet": ""
+      },
+      {
+        "timestamp": 30.34,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "neutral",
+              "score": 0.5
+            }
+          ],
+          "sentiment": "neutral",
+          "sentiment_confidence": 0.5,
+          "language": "ru"
+        },
+        "text_snippet": ""
+      },
+      {
+        "timestamp": 30.34,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "neutral",
+              "score": 0.5
+            }
+          ],
+          "sentiment": "neutral",
+          "sentiment_confidence": 0.5,
+          "language": "ru"
+        },
+        "text_snippet": ""
+      },
+      {
+        "timestamp": 30.34,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "neutral",
+              "score": 0.5
+            }
+          ],
+          "sentiment": "neutral",
+          "sentiment_confidence": 0.5,
+          "language": "ru"
+        },
+        "text_snippet": ""
+      },
+      {
+        "timestamp": 47.3,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "sadness",
+              "score": 0.45464324951171875
+            }
+          ],
+          "sentiment": "neutral",
+          "sentiment_confidence": 0.5,
+          "language": "ru",
+          "analysis_method": "ml_keyword_combined"
+        },
+        "text_snippet": " с farmers"
+      }
+    ],
+    "resolution": {
+      "resolved": false,
+      "resolution_score": 50,
+      "status": "unclear",
+      "final_sentiment": "neutral",
+      "language": "ru"
+    },
+    "worker_text": "",
+    "customer_text": "Сама mina. Сама осыпает, Brazilian drink Un sports with 10 hundred convinced 年 aggressively ahead of some speed Поторые сверхуūху мы считали не что dzień богатым einsmusicовей, потому что мы считалиiesen, что такие так安全ANDРые все хотелось не ничего не sticky не очень тpler Fakehood icularly дальше как karşı так сложно с farmers",
+    "response_times": [],
+    "interruptions": 0,
+    "greeting": false,
+    "closing": false,
+    "language": "ru",
+    "transcription": {
+      "text": " Сама mina. Сама осыпает, Brazilian drink Un sports with 10 hundred convinced年 aggressively ahead of some speed Поторые сверхуūху мы считали не что dzień богатым einsmusicовей, потому что мы считалиiesen, что такие так安全ANDРые все хотелось не ничего не sticky не очень тpler Fakehoodicularly дальше как karşı так сложно с farmers",
+      "segments": [
+        {
+          "id": 0,
+          "seek": 0,
+          "start": 0.0,
+          "end": 1.84,
+          "text": " Сама mina.",
+          "tokens": [
+            50364,
+            2933,
+            27250,
+            48412,
+            13,
+            50659
+          ],
+          "temperature": 1.0,
+          "avg_logprob": -4.8610972528872285,
+          "compression_ratio": 1.038709677419355,
+          "no_speech_prob": 0.28227657079696655,
+          "words": [
+            {
+              "word": " Сама",
+              "start": 0.0,
+              "end": 1.6,
+              "probability": 0.24683523923158646
+            },
+            {
+              "word": " mina.",
+              "start": 1.6,
+              "end": 1.84,
+              "probability": 5.379615322453901e-05
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "seek": 0,
+          "start": 2.26,
+          "end": 3.68,
+          "text": " Сама осыпает, Brazilian drink",
+          "tokens": [
+            50659,
+            2933,
+            27250,
+            8940,
+            43708,
+            3310,
+            11,
+            23435,
+            2822,
+            50749
+          ],
+          "temperature": 1.0,
+          "avg_logprob": -4.8610972528872285,
+          "compression_ratio": 1.038709677419355,
+          "no_speech_prob": 0.28227657079696655,
+          "words": [
+            {
+              "word": " Сама",
+              "start": 2.26,
+              "end": 2.68,
+              "probability": 0.8173621296882629
+            },
+            {
+              "word": " осыпает,",
+              "start": 2.68,
+              "end": 3.12,
+              "probability": 0.024602665255467098
+            },
+            {
+              "word": " Brazilian",
+              "start": 3.12,
+              "end": 3.68,
+              "probability": 9.052784662344493e-06
+            },
+            {
+              "word": " drink",
+              "start": 3.68,
+              "end": 3.68,
+              "probability": 0.0002651424438226968
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "seek": 0,
+          "start": 3.68,
+          "end": 9.02,
+          "text": " Un sports with 10 hundred convinced",
+          "tokens": [
+            50750,
+            1156,
+            6573,
+            365,
+            1266,
+            3262,
+            12561,
+            51014
+          ],
+          "temperature": 1.0,
+          "avg_logprob": -4.8610972528872285,
+          "compression_ratio": 1.038709677419355,
+          "no_speech_prob": 0.28227657079696655,
+          "words": [
+            {
+              "word": " Un",
+              "start": 3.68,
+              "end": 5.1,
+              "probability": 4.083429666934535e-05
+            },
+            {
+              "word": " sports",
+              "start": 5.1,
+              "end": 5.9,
+              "probability": 2.4039796699071303e-05
+            },
+            {
+              "word": " with",
+              "start": 5.9,
+              "end": 5.9,
+              "probability": 0.004529394209384918
+            },
+            {
+              "word": " 10",
+              "start": 5.9,
+              "end": 6.08,
+              "probability": 0.00024219676561187953
+            },
+            {
+              "word": " hundred",
+              "start": 6.08,
+              "end": 7.92,
+              "probability": 0.00045579555444419384
+            },
+            {
+              "word": " convinced年",
+              "start": 7.92,
+              "end": 9.02,
+              "probability": 1.2888496371488145e-05
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "seek": 0,
+          "start": 9.02,
+          "end": 17.04,
+          "text": "年 aggressively ahead of some speed",
+          "tokens": [
+            51014,
+            5157,
+            32024,
+            2286,
+            295,
+            512,
+            3073,
+            51414
+          ],
+          "temperature": 1.0,
+          "avg_logprob": -4.8610972528872285,
+          "compression_ratio": 1.038709677419355,
+          "no_speech_prob": 0.28227657079696655,
+          "words": [
+            {
+              "word": " aggressively",
+              "start": 9.02,
+              "end": 9.14,
+              "probability": 1.8441652400724706e-06
+            },
+            {
+              "word": " ahead",
+              "start": 9.14,
+              "end": 9.18,
+              "probability": 0.000376813201000914
+            },
+            {
+              "word": " of",
+              "start": 9.18,
+              "end": 9.98,
+              "probability": 0.3766775131225586
+            },
+            {
+              "word": " some",
+              "start": 9.98,
+              "end": 12.2,
+              "probability": 0.0011644558981060982
+            },
+            {
+              "word": " speed",
+              "start": 12.2,
+              "end": 15.98,
+              "probability": 0.0008082105196081102
+            },
+            {
+              "word": " Поторые",
+              "start": 15.98,
+              "end": 17.04,
+              "probability": 0.03860924828404677
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "seek": 0,
+          "start": 17.04,
+          "end": 18.74,
+          "text": " Поторые сверхуūху",
+          "tokens": [
+            51414,
+            2608,
+            354,
+            2542,
+            5312,
+            4155,
+            26937,
+            585,
+            19056,
+            1157,
+            585,
+            51694
+          ],
+          "temperature": 1.0,
+          "avg_logprob": -4.8610972528872285,
+          "compression_ratio": 1.038709677419355,
+          "no_speech_prob": 0.28227657079696655,
+          "words": [
+            {
+              "word": " сверхуūху",
+              "start": 17.04,
+              "end": 18.74,
+              "probability": 0.1963634393408332
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "seek": 1874,
+          "start": 18.74,
+          "end": 24.3,
+          "text": " мы считали не что dzień богатым einsmusicовей,",
+          "tokens": [
+            50364,
+            4777,
+            22413,
+            4071,
+            1725,
+            2143,
+            47568,
+            33001,
+            2134,
+            11250,
+            21889,
+            7572,
+            1055,
+            2345,
+            11,
+            50643
+          ],
+          "temperature": 1.0,
+          "avg_logprob": -5.083198377821181,
+          "compression_ratio": 1.412639405204461,
+          "no_speech_prob": 0.22259314358234406,
+          "words": [
+            {
+              "word": " мы",
+              "start": 18.74,
+              "end": 19.02,
+              "probability": 0.0016565840924158692
+            },
+            {
+              "word": " считали",
+              "start": 19.02,
+              "end": 19.02,
+              "probability": 0.029507258790545166
+            },
+            {
+              "word": " не",
+              "start": 19.02,
+              "end": 19.02,
+              "probability": 0.02756309323012829
+            },
+            {
+              "word": " что",
+              "start": 19.02,
+              "end": 19.02,
+              "probability": 0.05925527960062027
+            },
+            {
+              "word": " dzień",
+              "start": 19.02,
+              "end": 19.56,
+              "probability": 1.6323912859661505e-05
+            },
+            {
+              "word": " богатым",
+              "start": 19.56,
+              "end": 22.1,
+              "probability": 0.15660943726834375
+            },
+            {
+              "word": " einsmusicовей,",
+              "start": 22.1,
+              "end": 24.3,
+              "probability": 0.0016662720217937022
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "seek": 1874,
+          "start": 24.3,
+          "end": 24.36,
+          "text": " потому что мы считалиiesen, что такие так安全ANDРые",
+          "tokens": [
+            50643,
+            11919,
+            2143,
+            4777,
+            22413,
+            4071,
+            30383,
+            11,
+            2143,
+            20113,
+            2936,
+            45466,
+            8070,
+            11179,
+            5312,
+            50754
+          ],
+          "temperature": 1.0,
+          "avg_logprob": -5.083198377821181,
+          "compression_ratio": 1.412639405204461,
+          "no_speech_prob": 0.22259314358234406,
+          "words": [
+            {
+              "word": " потому",
+              "start": 24.3,
+              "end": 24.36,
+              "probability": 0.022022193297743797
+            },
+            {
+              "word": " что",
+              "start": 24.36,
+              "end": 24.36,
+              "probability": 0.9616594314575195
+            },
+            {
+              "word": " мы",
+              "start": 24.36,
+              "end": 24.36,
+              "probability": 0.042132504284381866
+            },
+            {
+              "word": " считалиiesen,",
+              "start": 24.36,
+              "end": 24.36,
+              "probability": 0.2813335417055593
+            },
+            {
+              "word": " что",
+              "start": 24.36,
+              "end": 24.36,
+              "probability": 0.6717533469200134
+            },
+            {
+              "word": " такие",
+              "start": 24.36,
+              "end": 24.36,
+              "probability": 0.001293871202506125
+            },
+            {
+              "word": " так安全ANDРые",
+              "start": 24.36,
+              "end": 24.36,
+              "probability": 0.01343246048054425
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "seek": 1874,
+          "start": 24.36,
+          "end": 24.38,
+          "text": " все хотелось не ничего не sticky",
+          "tokens": [
+            50754,
+            4640,
+            27688,
+            8049,
+            1725,
+            16630,
+            1725,
+            14470,
+            50913
+          ],
+          "temperature": 1.0,
+          "avg_logprob": -5.083198377821181,
+          "compression_ratio": 1.412639405204461,
+          "no_speech_prob": 0.22259314358234406,
+          "words": [
+            {
+              "word": " все",
+              "start": 24.36,
+              "end": 24.36,
+              "probability": 0.0029478457290679216
+            },
+            {
+              "word": " хотелось",
+              "start": 24.36,
+              "end": 24.36,
+              "probability": 0.462336289590894
+            },
+            {
+              "word": " не",
+              "start": 24.36,
+              "end": 24.36,
+              "probability": 0.017433343455195427
+            },
+            {
+              "word": " ничего",
+              "start": 24.36,
+              "end": 24.38,
+              "probability": 0.0002491090854164213
+            },
+            {
+              "word": " не",
+              "start": 24.38,
+              "end": 24.38,
+              "probability": 0.17643135786056519
+            },
+            {
+              "word": " sticky",
+              "start": 24.38,
+              "end": 24.38,
+              "probability": 1.8788301531458274e-05
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "seek": 1874,
+          "start": 24.38,
+          "end": 28.52,
+          "text": " не очень тpler Fakehood",
+          "tokens": [
+            51163,
+            1725,
+            6730,
+            1069,
+            22732,
+            40469,
+            3809,
+            51277
+          ],
+          "temperature": 1.0,
+          "avg_logprob": -5.083198377821181,
+          "compression_ratio": 1.412639405204461,
+          "no_speech_prob": 0.22259314358234406,
+          "words": [
+            {
+              "word": " не",
+              "start": 24.38,
+              "end": 24.38,
+              "probability": 0.030795296654105186
+            },
+            {
+              "word": " очень",
+              "start": 24.38,
+              "end": 25.54,
+              "probability": 0.015967143699526787
+            },
+            {
+              "word": " тpler",
+              "start": 25.54,
+              "end": 26.02,
+              "probability": 0.0005436845090116549
+            },
+            {
+              "word": " Fakehoodаicularly",
+              "start": 26.02,
+              "end": 28.52,
+              "probability": 0.0015538992644721361
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "seek": 1874,
+          "start": 28.52,
+          "end": 28.52,
+          "text": "",
+          "tokens": [],
+          "temperature": 1.0,
+          "avg_logprob": -5.083198377821181,
+          "compression_ratio": 1.412639405204461,
+          "no_speech_prob": 0.22259314358234406,
+          "words": []
+        },
+        {
+          "id": 10,
+          "seek": 1874,
+          "start": 28.52,
+          "end": 29.48,
+          "text": "icularly дальше",
+          "tokens": [
+            51309,
+            29695,
+            26814,
+            51314
+          ],
+          "temperature": 1.0,
+          "avg_logprob": -5.083198377821181,
+          "compression_ratio": 1.412639405204461,
+          "no_speech_prob": 0.22259314358234406,
+          "words": [
+            {
+              "word": " как",
+              "start": 28.52,
+              "end": 29.48,
+              "probability": 0.004058791324496269
+            },
+            {
+              "word": " karşı",
+              "start": 29.48,
+              "end": 29.48,
+              "probability": 2.036286059592385e-05
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "seek": 1874,
+          "start": 29.48,
+          "end": 30.34,
+          "text": " как karşı так сложно",
+          "tokens": [
+            51314,
+            3014,
+            31653,
+            2936,
+            41016,
+            51405
+          ],
+          "temperature": 1.0,
+          "avg_logprob": -5.083198377821181,
+          "compression_ratio": 1.412639405204461,
+          "no_speech_prob": 0.22259314358234406,
+          "words": [
+            {
+              "word": " так",
+              "start": 29.48,
+              "end": 29.48,
+              "probability": 0.003666055155918002
+            },
+            {
+              "word": " сложно",
+              "start": 29.48,
+              "end": 29.48,
+              "probability": 0.0006676534540019929
+            },
+            {
+              "word": " каждыйобще",
+              "start": 29.48,
+              "end": 30.34,
+              "probability": 4.4341561988403555e-05
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "seek": 1874,
+          "start": 30.34,
+          "end": 30.34,
+          "text": "",
+          "tokens": [],
+          "temperature": 1.0,
+          "avg_logprob": -5.083198377821181,
+          "compression_ratio": 1.412639405204461,
+          "no_speech_prob": 0.22259314358234406,
+          "words": []
+        },
+        {
+          "id": 13,
+          "seek": 1874,
+          "start": 30.34,
+          "end": 30.34,
+          "text": "",
+          "tokens": [],
+          "temperature": 1.0,
+          "avg_logprob": -5.083198377821181,
+          "compression_ratio": 1.412639405204461,
+          "no_speech_prob": 0.22259314358234406,
+          "words": []
+        },
+        {
+          "id": 14,
+          "seek": 1874,
+          "start": 30.34,
+          "end": 30.34,
+          "text": "",
+          "tokens": [],
+          "temperature": 1.0,
+          "avg_logprob": -5.083198377821181,
+          "compression_ratio": 1.412639405204461,
+          "no_speech_prob": 0.22259314358234406,
+          "words": []
+        },
+        {
+          "id": 15,
+          "seek": 1874,
+          "start": 30.34,
+          "end": 30.34,
+          "text": "",
+          "tokens": [],
+          "temperature": 1.0,
+          "avg_logprob": -5.083198377821181,
+          "compression_ratio": 1.412639405204461,
+          "no_speech_prob": 0.22259314358234406,
+          "words": []
+        },
+        {
+          "id": 16,
+          "seek": 1874,
+          "start": 30.34,
+          "end": 30.34,
+          "text": "",
+          "tokens": [],
+          "temperature": 1.0,
+          "avg_logprob": -5.083198377821181,
+          "compression_ratio": 1.412639405204461,
+          "no_speech_prob": 0.22259314358234406,
+          "words": []
+        },
+        {
+          "id": 17,
+          "seek": 1874,
+          "start": 30.34,
+          "end": 30.34,
+          "text": "",
+          "tokens": [],
+          "temperature": 1.0,
+          "avg_logprob": -5.083198377821181,
+          "compression_ratio": 1.412639405204461,
+          "no_speech_prob": 0.22259314358234406,
+          "words": []
+        },
+        {
+          "id": 18,
+          "seek": 1874,
+          "start": 30.34,
+          "end": 30.34,
+          "text": "",
+          "tokens": [],
+          "temperature": 1.0,
+          "avg_logprob": -5.083198377821181,
+          "compression_ratio": 1.412639405204461,
+          "no_speech_prob": 0.22259314358234406,
+          "words": []
+        },
+        {
+          "id": 19,
+          "seek": 1874,
+          "start": 47.3,
+          "end": 47.959999999999994,
+          "text": " с farmers",
+          "tokens": [
+            51792,
+            776,
+            11339,
+            51825
+          ],
+          "temperature": 1.0,
+          "avg_logprob": -5.083198377821181,
+          "compression_ratio": 1.412639405204461,
+          "no_speech_prob": 0.22259314358234406,
+          "words": []
+        }
+      ],
+      "language": "ru",
+      "detected_language": "ru",
+      "duration": 0
+    }
+  },
+  "timestamp": "2025-09-28T06:13:42.532917"
+}

@@ -1,0 +1,520 @@
+{
+  "call_id": "77914be8-5a5e-44c0-9d85-5f8994b70618",
+  "worker_id": 1,
+  "scores": {
+    "total_score": 58.0,
+    "emotion_score": 50,
+    "resolution_score": 50,
+    "communication_score": 80,
+    "professionalism_score": 60,
+    "breakdown": {
+      "strengths": [],
+      "improvements": [
+        "Work on empathy and emotional connection"
+      ]
+    }
+  },
+  "analysis": {
+    "emotions": {
+      "emotions": [
+        {
+          "label": "joy",
+          "score": 0.34825628995895386
+        }
+      ],
+      "sentiment": "positive",
+      "sentiment_confidence": 0.4012986123561859,
+      "language": "ru"
+    },
+    "emotion_progression": [
+      {
+        "timestamp": 0.0,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "optimism",
+              "score": 0.551822304725647
+            }
+          ],
+          "sentiment": "neutral",
+          "sentiment_confidence": 0.8117091059684753,
+          "language": "ru"
+        },
+        "text_snippet": " С donutеза"
+      },
+      {
+        "timestamp": 2.98,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "optimism",
+              "score": 0.4342805743217468
+            }
+          ],
+          "sentiment": "neutral",
+          "sentiment_confidence": 0.6342270374298096,
+          "language": "ru"
+        },
+        "text_snippet": " С ever like"
+      },
+      {
+        "timestamp": 3.44,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "joy",
+              "score": 0.34825628995895386
+            }
+          ],
+          "sentiment": "positive",
+          "sentiment_confidence": 0.4012986123561859,
+          "language": "ru"
+        },
+        "text_snippet": ""
+      },
+      {
+        "timestamp": 3.44,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "optimism",
+              "score": 0.38288313150405884
+            }
+          ],
+          "sentiment": "neutral",
+          "sentiment_confidence": 0.8289689421653748,
+          "language": "ru"
+        },
+        "text_snippet": " как."
+      },
+      {
+        "timestamp": 4.96,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "optimism",
+              "score": 0.38083165884017944
+            }
+          ],
+          "sentiment": "neutral",
+          "sentiment_confidence": 0.8240660429000854,
+          "language": "ru"
+        },
+        "text_snippet": " ее они уехали"
+      },
+      {
+        "timestamp": 6.72,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "joy",
+              "score": 0.34825628995895386
+            }
+          ],
+          "sentiment": "positive",
+          "sentiment_confidence": 0.4012986123561859,
+          "language": "ru"
+        },
+        "text_snippet": ""
+      },
+      {
+        "timestamp": 10.98,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "optimism",
+              "score": 0.4040161073207855
+            }
+          ],
+          "sentiment": "neutral",
+          "sentiment_confidence": 0.8035767078399658,
+          "language": "ru"
+        },
+        "text_snippet": " такого"
+      },
+      {
+        "timestamp": 12.38,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "optimism",
+              "score": 0.464928537607193
+            }
+          ],
+          "sentiment": "neutral",
+          "sentiment_confidence": 0.7823224067687988,
+          "language": "ru"
+        },
+        "text_snippet": " за два"
+      },
+      {
+        "timestamp": 14.68,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "optimism",
+              "score": 0.3884846866130829
+            }
+          ],
+          "sentiment": "neutral",
+          "sentiment_confidence": 0.7563513517379761,
+          "language": "ru"
+        },
+        "text_snippet": " небольшие"
+      },
+      {
+        "timestamp": 28.560000000000002,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "joy",
+              "score": 0.5455979108810425
+            }
+          ],
+          "sentiment": "neutral",
+          "sentiment_confidence": 0.7071041464805603,
+          "language": "ru"
+        },
+        "text_snippet": " sencill chant"
+      },
+      {
+        "timestamp": 29.98,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "optimism",
+              "score": 0.49728021025657654
+            }
+          ],
+          "sentiment": "neutral",
+          "sentiment_confidence": 0.806696355342865,
+          "language": "ru"
+        },
+        "text_snippet": " СМЕХ"
+      }
+    ],
+    "resolution": {
+      "resolved": false,
+      "resolution_score": 50,
+      "status": "unclear",
+      "final_sentiment": "neutral",
+      "language": "ru"
+    },
+    "worker_text": "",
+    "customer_text": "",
+    "response_times": [],
+    "interruptions": 0,
+    "greeting": false,
+    "closing": false,
+    "language": "ru",
+    "transcription": {
+      "text": " С donutеза С ever like как. ее они уехали такого за два небольшие sencill chant СМЕХ",
+      "segments": [
+        {
+          "id": 0,
+          "seek": 0,
+          "start": 0.0,
+          "end": 2.24,
+          "text": " С donutеза",
+          "tokens": [
+            50364,
+            2933,
+            33782,
+            3634,
+            386,
+            50476
+          ],
+          "temperature": 1.0,
+          "avg_logprob": -5.337822955587636,
+          "compression_ratio": 1.1290322580645162,
+          "no_speech_prob": 0.28227657079696655,
+          "words": [
+            {
+              "word": " С",
+              "start": 0.0,
+              "end": 1.54,
+              "probability": 0.25048813223838806
+            },
+            {
+              "word": " donutеза",
+              "start": 1.54,
+              "end": 2.24,
+              "probability": 0.017592984282752393
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "seek": 0,
+          "start": 2.98,
+          "end": 3.44,
+          "text": " С ever like",
+          "tokens": [
+            50484,
+            2933,
+            1562,
+            411,
+            50489
+          ],
+          "temperature": 1.0,
+          "avg_logprob": -5.337822955587636,
+          "compression_ratio": 1.1290322580645162,
+          "no_speech_prob": 0.28227657079696655,
+          "words": [
+            {
+              "word": " С",
+              "start": 2.98,
+              "end": 3.44,
+              "probability": 0.03356998786330223
+            },
+            {
+              "word": " ever",
+              "start": 3.44,
+              "end": 3.44,
+              "probability": 0.0004669653717428446
+            },
+            {
+              "word": " like",
+              "start": 3.44,
+              "end": 3.44,
+              "probability": 0.00018781337712425739
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "seek": 0,
+          "start": 3.44,
+          "end": 3.44,
+          "text": "",
+          "tokens": [],
+          "temperature": 1.0,
+          "avg_logprob": -5.337822955587636,
+          "compression_ratio": 1.1290322580645162,
+          "no_speech_prob": 0.28227657079696655,
+          "words": []
+        },
+        {
+          "id": 3,
+          "seek": 0,
+          "start": 3.44,
+          "end": 4.62,
+          "text": " как.",
+          "tokens": [
+            50639,
+            3014,
+            13,
+            50709
+          ],
+          "temperature": 1.0,
+          "avg_logprob": -5.337822955587636,
+          "compression_ratio": 1.1290322580645162,
+          "no_speech_prob": 0.28227657079696655,
+          "words": [
+            {
+              "word": " как.",
+              "start": 3.44,
+              "end": 4.62,
+              "probability": 0.0008962280116975307
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "seek": 0,
+          "start": 4.96,
+          "end": 6.72,
+          "text": " ее они уехали",
+          "tokens": [
+            50709,
+            14803,
+            7515,
+            1595,
+            8008,
+            4071,
+            50909
+          ],
+          "temperature": 1.0,
+          "avg_logprob": -5.337822955587636,
+          "compression_ratio": 1.1290322580645162,
+          "no_speech_prob": 0.28227657079696655,
+          "words": [
+            {
+              "word": " ее",
+              "start": 4.96,
+              "end": 6.36,
+              "probability": 9.234978278982453e-06
+            },
+            {
+              "word": " они",
+              "start": 6.36,
+              "end": 6.72,
+              "probability": 0.0009261322556994855
+            },
+            {
+              "word": " уехали",
+              "start": 6.72,
+              "end": 6.72,
+              "probability": 0.2993205456684033
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "seek": 0,
+          "start": 6.72,
+          "end": 6.72,
+          "text": "",
+          "tokens": [],
+          "temperature": 1.0,
+          "avg_logprob": -5.337822955587636,
+          "compression_ratio": 1.1290322580645162,
+          "no_speech_prob": 0.28227657079696655,
+          "words": []
+        },
+        {
+          "id": 6,
+          "seek": 0,
+          "start": 10.98,
+          "end": 12.38,
+          "text": " такого",
+          "tokens": [
+            51021,
+            31158,
+            51073
+          ],
+          "temperature": 1.0,
+          "avg_logprob": -5.337822955587636,
+          "compression_ratio": 1.1290322580645162,
+          "no_speech_prob": 0.28227657079696655,
+          "words": [
+            {
+              "word": " такого",
+              "start": 10.98,
+              "end": 12.38,
+              "probability": 4.988956425222568e-05
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "seek": 0,
+          "start": 12.38,
+          "end": 14.68,
+          "text": " за два",
+          "tokens": [
+            51073,
+            4396,
+            18505,
+            51165
+          ],
+          "temperature": 1.0,
+          "avg_logprob": -5.337822955587636,
+          "compression_ratio": 1.1290322580645162,
+          "no_speech_prob": 0.28227657079696655,
+          "words": [
+            {
+              "word": " за",
+              "start": 12.38,
+              "end": 12.38,
+              "probability": 0.002036257181316614
+            },
+            {
+              "word": " два",
+              "start": 12.38,
+              "end": 14.68,
+              "probability": 0.0010915023740381002
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "seek": 0,
+          "start": 14.68,
+          "end": 14.74,
+          "text": " небольшие",
+          "tokens": [
+            51165,
+            32692,
+            5299,
+            51327
+          ],
+          "temperature": 1.0,
+          "avg_logprob": -5.337822955587636,
+          "compression_ratio": 1.1290322580645162,
+          "no_speech_prob": 0.28227657079696655,
+          "words": [
+            {
+              "word": " небольшие",
+              "start": 14.68,
+              "end": 14.74,
+              "probability": 0.025410277095943457
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "seek": 0,
+          "start": 28.560000000000002,
+          "end": 29.98,
+          "text": " sencill chant",
+          "tokens": [
+            51406,
+            46749,
+            28280,
+            51653
+          ],
+          "temperature": 1.0,
+          "avg_logprob": -5.337822955587636,
+          "compression_ratio": 1.1290322580645162,
+          "no_speech_prob": 0.28227657079696655,
+          "words": [
+            {
+              "word": " sencill",
+              "start": 28.560000000000002,
+              "end": 29.96,
+              "probability": 3.793619043790386e-06
+            },
+            {
+              "word": " chant",
+              "start": 29.96,
+              "end": 29.98,
+              "probability": 2.554801767473691e-06
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "seek": 2998,
+          "start": 29.98,
+          "end": 30.34,
+          "text": " СМЕХ",
+          "tokens": [
+            50364,
+            2933,
+            10626,
+            10156,
+            24665,
+            50464
+          ],
+          "temperature": 0.0,
+          "avg_logprob": -0.9501322337559291,
+          "compression_ratio": 0.47058823529411764,
+          "no_speech_prob": 0.6464101672172546,
+          "words": [
+            {
+              "word": " СМЕХ",
+              "start": 29.98,
+              "end": 30.34,
+              "probability": 0.4376742336899042
+            }
+          ]
+        }
+      ],
+      "language": "ru",
+      "detected_language": "ru",
+      "duration": 0
+    }
+  },
+  "timestamp": "2025-09-28T02:38:11.516436"
+}

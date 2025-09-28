@@ -1,0 +1,528 @@
+{
+  "call_id": "b9e34db0-cd0d-42a1-9b2a-ae4cd4e6fe4a",
+  "worker_id": 1,
+  "scores": {
+    "total_score": 57.2,
+    "emotion_score": 50.0,
+    "resolution_score": 50,
+    "communication_score": 60,
+    "professionalism_score": 76,
+    "breakdown": {
+      "strengths": [],
+      "improvements": [
+        "Work on empathy and emotional connection"
+      ]
+    }
+  },
+  "analysis": {
+    "emotions": {
+      "emotions": [
+        {
+          "label": "optimism",
+          "score": 0.4682360589504242
+        }
+      ],
+      "sentiment": "negative",
+      "sentiment_confidence": 0.6,
+      "language": "ru",
+      "analysis_method": "ml_keyword_combined"
+    },
+    "emotion_progression": [
+      {
+        "timestamp": 0.7599999999999993,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "optimism",
+              "score": 0.48736995458602905
+            }
+          ],
+          "sentiment": "negative",
+          "sentiment_confidence": 0.6,
+          "language": "ru",
+          "analysis_method": "ml_keyword_combined"
+        },
+        "text_snippet": " Здравствуйте, меня зовут Ужас, меня проблема в том, что я не могу забезить карто."
+      },
+      {
+        "timestamp": 7.12,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "optimism",
+              "score": 0.3937140107154846
+            }
+          ],
+          "sentiment": "positive",
+          "sentiment_confidence": 0.6,
+          "language": "ru",
+          "analysis_method": "ml_keyword_combined"
+        },
+        "text_snippet": " Здравствуйте Ужас, спасибо за просение."
+      },
+      {
+        "timestamp": 11.979999999999999,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "optimism",
+              "score": 0.4401302635669708
+            }
+          ],
+          "sentiment": "negative",
+          "sentiment_confidence": 0.6,
+          "language": "ru",
+          "analysis_method": "ml_keyword_combined"
+        },
+        "text_snippet": " Проблема дышается, подождите пару секунд, оставайтесь на линии."
+      },
+      {
+        "timestamp": 17.86,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "optimism",
+              "score": 0.43852001428604126
+            }
+          ],
+          "sentiment": "neutral",
+          "sentiment_confidence": 0.48155600428581236,
+          "language": "ru",
+          "analysis_method": "ml_keyword_combined"
+        },
+        "text_snippet": " Из нее из Ужас, ваш проблем решена, можно проявить на своем банкском аккаунте, до свидания."
+      }
+    ],
+    "resolution": {
+      "resolved": false,
+      "resolution_score": 50,
+      "status": "unclear",
+      "final_sentiment": "neutral",
+      "language": "ru"
+    },
+    "worker_text": "Здравствуйте, меня зовут Ужас, меня проблема в том, что я не могу забезить карто. Здравствуйте Ужас, спасибо за просение.",
+    "customer_text": "Проблема дышается, подождите пару секунд, оставайтесь на линии. Из нее из Ужас, ваш проблем решена, можно проявить на своем банкском аккаунте, до свидания.",
+    "response_times": [],
+    "interruptions": 0,
+    "greeting": true,
+    "closing": false,
+    "language": "ru",
+    "transcription": {
+      "text": " Здравствуйте, меня зовут Ужас, меня проблема в том, что я не могу забезить карто. Здравствуйте Ужас, спасибо за просение. Проблема дышается, подождите пару секунд, оставайтесь на линии. Из нее из Ужас, ваш проблем решена, можно проявить на своем банкском аккаунте, до свидания.",
+      "segments": [
+        {
+          "id": 0,
+          "seek": 0,
+          "start": 0.7599999999999993,
+          "end": 6.56,
+          "text": " Здравствуйте, меня зовут Ужас, меня проблема в том, что я не могу забезить карто.",
+          "tokens": [
+            50364,
+            17613,
+            36359,
+            11,
+            6885,
+            46376,
+            6523,
+            1820,
+            2019,
+            11,
+            6885,
+            48264,
+            740,
+            13294,
+            11,
+            2143,
+            2552,
+            1725,
+            22951,
+            13890,
+            3634,
+            3258,
+            13560,
+            860,
+            13,
+            50714
+          ],
+          "temperature": 0.0,
+          "avg_logprob": -0.534661401178419,
+          "compression_ratio": 1.9230769230769231,
+          "no_speech_prob": 0.42230063676834106,
+          "words": [
+            {
+              "word": " Здравствуйте,",
+              "start": 0.7599999999999993,
+              "end": 1.4,
+              "probability": 0.5931427031755447
+            },
+            {
+              "word": " меня",
+              "start": 1.62,
+              "end": 1.8,
+              "probability": 0.7542809247970581
+            },
+            {
+              "word": " зовут",
+              "start": 1.8,
+              "end": 2.18,
+              "probability": 0.9924100637435913
+            },
+            {
+              "word": " Ужас,",
+              "start": 2.18,
+              "end": 2.74,
+              "probability": 0.6528264482816061
+            },
+            {
+              "word": " меня",
+              "start": 2.96,
+              "end": 3.1,
+              "probability": 0.7330560088157654
+            },
+            {
+              "word": " проблема",
+              "start": 3.1,
+              "end": 3.6,
+              "probability": 0.26010623574256897
+            },
+            {
+              "word": " в",
+              "start": 3.6,
+              "end": 3.88,
+              "probability": 0.9737638831138611
+            },
+            {
+              "word": " том,",
+              "start": 3.88,
+              "end": 4.02,
+              "probability": 0.9884812831878662
+            },
+            {
+              "word": " что",
+              "start": 4.18,
+              "end": 4.9,
+              "probability": 0.9844809770584106
+            },
+            {
+              "word": " я",
+              "start": 4.9,
+              "end": 5.1,
+              "probability": 0.9640148878097534
+            },
+            {
+              "word": " не",
+              "start": 5.1,
+              "end": 5.28,
+              "probability": 0.9875432252883911
+            },
+            {
+              "word": " могу",
+              "start": 5.28,
+              "end": 5.52,
+              "probability": 0.9734368920326233
+            },
+            {
+              "word": " забезить",
+              "start": 5.52,
+              "end": 6.02,
+              "probability": 0.44005324443181354
+            },
+            {
+              "word": " карто.",
+              "start": 6.02,
+              "end": 6.56,
+              "probability": 0.6668282449245453
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "seek": 0,
+          "start": 7.12,
+          "end": 10.18,
+          "text": " Здравствуйте Ужас, спасибо за просение.",
+          "tokens": [
+            50714,
+            17613,
+            36359,
+            6523,
+            1820,
+            2019,
+            11,
+            37536,
+            4396,
+            21109,
+            5627,
+            13,
+            50914
+          ],
+          "temperature": 0.0,
+          "avg_logprob": -0.534661401178419,
+          "compression_ratio": 1.9230769230769231,
+          "no_speech_prob": 0.42230063676834106,
+          "words": [
+            {
+              "word": " Здравствуйте",
+              "start": 7.12,
+              "end": 7.5,
+              "probability": 0.9035267531871796
+            },
+            {
+              "word": " Ужас,",
+              "start": 7.5,
+              "end": 8.4,
+              "probability": 0.7845984995365143
+            },
+            {
+              "word": " спасибо",
+              "start": 8.86,
+              "end": 9.22,
+              "probability": 0.9872783422470093
+            },
+            {
+              "word": " за",
+              "start": 9.22,
+              "end": 9.54,
+              "probability": 0.978340208530426
+            },
+            {
+              "word": " просение.",
+              "start": 9.54,
+              "end": 10.18,
+              "probability": 0.21717139333486557
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "seek": 0,
+          "start": 11.979999999999999,
+          "end": 17.0,
+          "text": " Проблема дышается, подождите пару секунд, оставайтесь на линии.",
+          "tokens": [
+            50914,
+            8567,
+            2061,
+            14885,
+            386,
+            1070,
+            12533,
+            6970,
+            11,
+            4095,
+            20037,
+            5878,
+            44163,
+            22869,
+            40278,
+            11,
+            25969,
+            30100,
+            1470,
+            7444,
+            1903,
+            435,
+            13,
+            51214
+          ],
+          "temperature": 0.0,
+          "avg_logprob": -0.534661401178419,
+          "compression_ratio": 1.9230769230769231,
+          "no_speech_prob": 0.42230063676834106,
+          "words": [
+            {
+              "word": " Проблема",
+              "start": 11.979999999999999,
+              "end": 12.62,
+              "probability": 0.7027024030685425
+            },
+            {
+              "word": " дышается,",
+              "start": 12.62,
+              "end": 13.26,
+              "probability": 0.603956013917923
+            },
+            {
+              "word": " подождите",
+              "start": 14.3,
+              "end": 14.72,
+              "probability": 0.7186040083567301
+            },
+            {
+              "word": " пару",
+              "start": 14.72,
+              "end": 14.98,
+              "probability": 0.9335201978683472
+            },
+            {
+              "word": " секунд,",
+              "start": 14.98,
+              "end": 15.26,
+              "probability": 0.9813135862350464
+            },
+            {
+              "word": " оставайтесь",
+              "start": 15.36,
+              "end": 15.68,
+              "probability": 0.726376086473465
+            },
+            {
+              "word": " на",
+              "start": 15.68,
+              "end": 15.9,
+              "probability": 0.9569892287254333
+            },
+            {
+              "word": " линии.",
+              "start": 15.9,
+              "end": 17.0,
+              "probability": 0.7652900318304697
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "seek": 0,
+          "start": 17.86,
+          "end": 23.32,
+          "text": " Из нее из Ужас, ваш проблем решена, можно проявить на своем банкском аккаунте, до свидания.",
+          "tokens": [
+            51214,
+            24588,
+            33518,
+            3943,
+            6523,
+            1820,
+            2019,
+            11,
+            14536,
+            20920,
+            14025,
+            13362,
+            11,
+            8885,
+            4178,
+            12998,
+            3258,
+            1470,
+            6989,
+            1504,
+            29049,
+            755,
+            29166,
+            13790,
+            2833,
+            12161,
+            5863,
+            11,
+            5865,
+            43666,
+            8831,
+            13,
+            51564
+          ],
+          "temperature": 0.0,
+          "avg_logprob": -0.534661401178419,
+          "compression_ratio": 1.9230769230769231,
+          "no_speech_prob": 0.42230063676834106,
+          "words": [
+            {
+              "word": " Из",
+              "start": 17.86,
+              "end": 17.96,
+              "probability": 0.8734365701675415
+            },
+            {
+              "word": " нее",
+              "start": 17.96,
+              "end": 18.1,
+              "probability": 0.08520040661096573
+            },
+            {
+              "word": " из",
+              "start": 18.1,
+              "end": 18.34,
+              "probability": 0.21470478177070618
+            },
+            {
+              "word": " Ужас,",
+              "start": 18.34,
+              "end": 18.66,
+              "probability": 0.959790050983429
+            },
+            {
+              "word": " ваш",
+              "start": 18.74,
+              "end": 18.92,
+              "probability": 0.7691433429718018
+            },
+            {
+              "word": " проблем",
+              "start": 18.92,
+              "end": 19.26,
+              "probability": 0.7368291020393372
+            },
+            {
+              "word": " решена,",
+              "start": 19.26,
+              "end": 20.22,
+              "probability": 0.4828392304480076
+            },
+            {
+              "word": " можно",
+              "start": 20.22,
+              "end": 21.0,
+              "probability": 0.1562613546848297
+            },
+            {
+              "word": " проявить",
+              "start": 21.0,
+              "end": 21.36,
+              "probability": 0.4108065143227577
+            },
+            {
+              "word": " на",
+              "start": 21.36,
+              "end": 21.5,
+              "probability": 0.8356912732124329
+            },
+            {
+              "word": " своем",
+              "start": 21.5,
+              "end": 21.74,
+              "probability": 0.6494856774806976
+            },
+            {
+              "word": " банкском",
+              "start": 21.74,
+              "end": 22.24,
+              "probability": 0.7064851323763529
+            },
+            {
+              "word": " аккаунте,",
+              "start": 22.24,
+              "end": 22.84,
+              "probability": 0.7867219150066376
+            },
+            {
+              "word": " до",
+              "start": 22.88,
+              "end": 23.02,
+              "probability": 0.5395407676696777
+            },
+            {
+              "word": " свидания.",
+              "start": 23.02,
+              "end": 23.32,
+              "probability": 0.9258280992507935
+            }
+          ]
+        }
+      ],
+      "language": "ru",
+      "detected_language": "ru",
+      "duration": 0
+    }
+  },
+  "timestamp": "2025-09-28T06:16:25.234113"
+}

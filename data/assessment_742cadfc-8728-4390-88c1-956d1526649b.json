@@ -1,0 +1,259 @@
+{
+  "call_id": "742cadfc-8728-4390-88c1-956d1526649b",
+  "worker_id": 1,
+  "scores": {
+    "total_score": 53.61,
+    "emotion_score": 52.46,
+    "resolution_score": 50,
+    "communication_score": 65,
+    "professionalism_score": 50,
+    "breakdown": {
+      "strengths": [],
+      "improvements": [
+        "Work on empathy and emotional connection"
+      ]
+    }
+  },
+  "analysis": {
+    "emotions": {
+      "emotions": [
+        {
+          "label": "optimism",
+          "score": 0.47313857078552246
+        }
+      ],
+      "sentiment": "neutral",
+      "sentiment_confidence": 0.49194157123565674,
+      "language": "ru",
+      "analysis_method": "ml_keyword_combined"
+    },
+    "emotion_progression": [
+      {
+        "timestamp": 0.0,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "optimism",
+              "score": 0.39275798201560974
+            }
+          ],
+          "sentiment": "neutral",
+          "sentiment_confidence": 0.4678273946046829,
+          "language": "ru",
+          "analysis_method": "ml_keyword_combined"
+        },
+        "text_snippet": " bör Deutschen спать191 Pacific with"
+      },
+      {
+        "timestamp": 15.72,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "optimism",
+              "score": 0.40196704864501953
+            }
+          ],
+          "sentiment": "neutral",
+          "sentiment_confidence": 0.47059011459350586,
+          "language": "ru",
+          "analysis_method": "ml_keyword_combined"
+        },
+        "text_snippet": " encontrarся может быть вот это уже должен"
+      },
+      {
+        "timestamp": 28.42,
+        "emotions": {
+          "emotions": [
+            {
+              "label": "optimism",
+              "score": 0.33096134662628174
+            }
+          ],
+          "sentiment": "neutral",
+          "sentiment_confidence": 0.4492884039878845,
+          "language": "ru",
+          "analysis_method": "ml_keyword_combined"
+        },
+        "text_snippet": " Идупший против"
+      }
+    ],
+    "resolution": {
+      "resolved": false,
+      "resolution_score": 50,
+      "status": "unclear",
+      "final_sentiment": "neutral",
+      "language": "ru"
+    },
+    "worker_text": "",
+    "customer_text": "bör Deutschen спать191 Pacific with encontrarся может быть вот это уже должен Идупший против",
+    "response_times": [],
+    "interruptions": 0,
+    "greeting": false,
+    "closing": false,
+    "language": "ru",
+    "transcription": {
+      "text": " bör Deutschen спать191 Pacific with encontrarся может быть вот это уже должен Идупший против",
+      "segments": [
+        {
+          "id": 0,
+          "seek": 0,
+          "start": 0.0,
+          "end": 15.72,
+          "text": " bör Deutschen спать191 Pacific with",
+          "tokens": [
+            50364,
+            21175,
+            45070,
+            5307,
+            2209,
+            3405,
+            16,
+            13335,
+            365,
+            51752
+          ],
+          "temperature": 1.0,
+          "avg_logprob": -6.075031280517578,
+          "compression_ratio": 0.82,
+          "no_speech_prob": 0.28227657079696655,
+          "words": [
+            {
+              "word": " bör",
+              "start": 0.0,
+              "end": 2.7,
+              "probability": 3.653904059319757e-05
+            },
+            {
+              "word": " Deutschen",
+              "start": 2.7,
+              "end": 3.06,
+              "probability": 2.7194384529138915e-05
+            },
+            {
+              "word": " спать191",
+              "start": 3.06,
+              "end": 4.16,
+              "probability": 0.03968541476933751
+            },
+            {
+              "word": " Pacific",
+              "start": 4.16,
+              "end": 12.8,
+              "probability": 6.574282451765612e-06
+            },
+            {
+              "word": " with",
+              "start": 12.8,
+              "end": 15.72,
+              "probability": 0.00030894341762177646
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "seek": 1572,
+          "start": 15.72,
+          "end": 28.42,
+          "text": " encontrarся может быть вот это уже должен",
+          "tokens": [
+            50364,
+            17525,
+            1679,
+            8689,
+            11510,
+            5505,
+            2691,
+            7520,
+            25718
+          ],
+          "temperature": 1.0,
+          "avg_logprob": -5.200975799560547,
+          "compression_ratio": 0.9305555555555556,
+          "no_speech_prob": 0.14735567569732666,
+          "words": [
+            {
+              "word": " encontrarся",
+              "start": 15.72,
+              "end": 17.04,
+              "probability": 0.2594597976467412
+            },
+            {
+              "word": " может",
+              "start": 17.04,
+              "end": 18.4,
+              "probability": 0.00021307171846274287
+            },
+            {
+              "word": " быть",
+              "start": 18.4,
+              "end": 21.88,
+              "probability": 0.3228074610233307
+            },
+            {
+              "word": " вот",
+              "start": 21.88,
+              "end": 21.88,
+              "probability": 0.006264191586524248
+            },
+            {
+              "word": " это",
+              "start": 21.88,
+              "end": 21.94,
+              "probability": 0.054095763713121414
+            },
+            {
+              "word": " уже",
+              "start": 21.94,
+              "end": 24.96,
+              "probability": 0.004570952150970697
+            },
+            {
+              "word": " должен",
+              "start": 24.96,
+              "end": 28.42,
+              "probability": 8.325665112351999e-05
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "seek": 2842,
+          "start": 28.42,
+          "end": 30.34,
+          "text": " Идупший против",
+          "tokens": [
+            50375,
+            3272,
+            9031,
+            1354,
+            24958,
+            22534,
+            50814
+          ],
+          "temperature": 1.0,
+          "avg_logprob": -5.7081427574157715,
+          "compression_ratio": 0.7941176470588235,
+          "no_speech_prob": 0.3106189966201782,
+          "words": [
+            {
+              "word": " Идупший",
+              "start": 28.42,
+              "end": 29.16,
+              "probability": 0.008821304305456579
+            },
+            {
+              "word": " против",
+              "start": 29.16,
+              "end": 30.34,
+              "probability": 0.00019959977362304926
+            }
+          ]
+        }
+      ],
+      "language": "ru",
+      "detected_language": "ru",
+      "duration": 0
+    }
+  },
+  "timestamp": "2025-09-28T06:17:36.565806"
+}
